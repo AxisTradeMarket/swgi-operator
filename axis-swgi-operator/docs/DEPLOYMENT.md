@@ -2,9 +2,6 @@
 
 ## Build images
 ```bash
-podman build -f axis-swgi-api/Dockerfile -t axis-swgi-api:0.1.0 .
-podman tag axis-swgi-api:0.1.0 registry.connect.redhat.com/axissystems/swgi-core:0.1.0
-
 podman build -f axis-swgi-operator/Dockerfile -t axis-swgi-operator:0.1.0 .
 podman tag axis-swgi-operator:0.1.0 registry.connect.redhat.com/axissystems/axis-swgi-operator:0.1.0
 
@@ -14,6 +11,9 @@ podman tag axis-swgi-operator-bundle:0.1.0 registry.connect.redhat.com/axissyste
 podman build -f catalog/index.Dockerfile -t axis-swgi-operator-index:0.1.0 .
 podman tag axis-swgi-operator-index:0.1.0 registry.connect.redhat.com/axissystems/axis-swgi-operator-index:0.1.0
 ```
+
+Prerequisite:
+- The operand image referenced by the custom resource must already exist in the separate operand repository and registry.
 
 ## Direct install
 ```bash

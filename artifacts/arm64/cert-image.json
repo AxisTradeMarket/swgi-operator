@@ -10,8 +10,28 @@
         "image_id": "sha256:bd06e708973ccded6a3a0f62406d8d5ac3c79c79451f7633e8cb33a5c089ed5c",
         "labels": [
             {
-                "name": "maintainer",
-                "value": "support@example.com"
+                "name": "io.openshift.expose-services",
+                "value": "8080:http"
+            },
+            {
+                "name": "io.openshift.s2i.scripts-url",
+                "value": "image:///usr/libexec/s2i"
+            },
+            {
+                "name": "io.openshift.tags",
+                "value": "builder,python,python311,python-311,rh-python311"
+            },
+            {
+                "name": "io.s2i.scripts-url",
+                "value": "image:///usr/libexec/s2i"
+            },
+            {
+                "name": "io.k8s.description",
+                "value": "Python 3.11 available as container is a base platform for building and running various Python 3.11 applications and frameworks. Python is an easy to learn, powerful programming language. It has efficient high-level data structures and a simple but effective approach to object-oriented programming. Python's elegant syntax and dynamic typing, together with its interpreted nature, make it an ideal language for scripting and rapid application development in many areas on most platforms."
+            },
+            {
+                "name": "io.k8s.display-name",
+                "value": "Python 3.11"
             },
             {
                 "name": "name",
@@ -26,68 +46,20 @@
                 "value": "21d23409bb4dd6d7d4a99128a5ca40e2de4dd978"
             },
             {
-                "name": "com.redhat.component",
-                "value": "python-311-container"
+                "name": "vendor",
+                "value": "Axis Systems"
             },
             {
-                "name": "io.k8s.display-name",
-                "value": "Python 3.11"
+                "name": "version",
+                "value": "0.1.0"
             },
             {
-                "name": "io.openshift.s2i.scripts-url",
-                "value": "image:///usr/libexec/s2i"
-            },
-            {
-                "name": "io.openshift.tags",
-                "value": "builder,python,python311,python-311,rh-python311"
-            },
-            {
-                "name": "org.opencontainers.image.revision",
-                "value": "21d23409bb4dd6d7d4a99128a5ca40e2de4dd978"
-            },
-            {
-                "name": "release",
-                "value": "1"
+                "name": "description",
+                "value": "Kubernetes operator that manages SWGI operand deployment, scaling, lifecycle, and configuration."
             },
             {
                 "name": "summary",
                 "value": "SWGI operator control plane"
-            },
-            {
-                "name": "url",
-                "value": "https://catalog.redhat.com/en/search?searchType=containers"
-            },
-            {
-                "name": "com.redhat.license_terms",
-                "value": "https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
-            },
-            {
-                "name": "distribution-scope",
-                "value": "public"
-            },
-            {
-                "name": "io.buildah.version",
-                "value": "1.43.0"
-            },
-            {
-                "name": "io.k8s.description",
-                "value": "Python 3.11 available as container is a base platform for building and running various Python 3.11 applications and frameworks. Python is an easy to learn, powerful programming language. It has efficient high-level data structures and a simple but effective approach to object-oriented programming. Python's elegant syntax and dynamic typing, together with its interpreted nature, make it an ideal language for scripting and rapid application development in many areas on most platforms."
-            },
-            {
-                "name": "architecture",
-                "value": "aarch64"
-            },
-            {
-                "name": "cpe",
-                "value": "cpe:/a:redhat:enterprise_linux:9::appstream"
-            },
-            {
-                "name": "io.buildpacks.stack.id",
-                "value": "com.redhat.stacks.ubi9-python-311"
-            },
-            {
-                "name": "io.s2i.scripts-url",
-                "value": "image:///usr/libexec/s2i"
             },
             {
                 "name": "usage",
@@ -98,24 +70,52 @@
                 "value": "git"
             },
             {
-                "name": "vendor",
-                "value": "Axis Systems"
+                "name": "architecture",
+                "value": "aarch64"
             },
             {
-                "name": "version",
-                "value": "0.1.0"
+                "name": "distribution-scope",
+                "value": "public"
+            },
+            {
+                "name": "io.buildah.version",
+                "value": "1.43.0"
+            },
+            {
+                "name": "io.buildpacks.stack.id",
+                "value": "com.redhat.stacks.ubi9-python-311"
+            },
+            {
+                "name": "maintainer",
+                "value": "support@example.com"
+            },
+            {
+                "name": "org.opencontainers.image.revision",
+                "value": "21d23409bb4dd6d7d4a99128a5ca40e2de4dd978"
+            },
+            {
+                "name": "release",
+                "value": "1"
+            },
+            {
+                "name": "url",
+                "value": "https://catalog.redhat.com/en/search?searchType=containers"
             },
             {
                 "name": "build-date",
                 "value": "2026-03-26T04:44:03Z"
             },
             {
-                "name": "description",
-                "value": "Kubernetes operator that manages SWGI operand deployment, scaling, lifecycle, and configuration."
+                "name": "com.redhat.component",
+                "value": "python-311-container"
             },
             {
-                "name": "io.openshift.expose-services",
-                "value": "8080:http"
+                "name": "com.redhat.license_terms",
+                "value": "https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
+            },
+            {
+                "name": "cpe",
+                "value": "cpe:/a:redhat:enterprise_linux:9::appstream"
             }
         ],
         "layers": [
@@ -170,12 +170,12 @@
     "repositories": [
         {
             "published": false,
-            "push_date": "2026-03-30T07:27:31Z",
+            "push_date": "2026-03-30T07:46:36Z",
             "registry": "quay.io",
             "repository": "axis919/swgi-operator",
             "tags": [
                 {
-                    "added_date": "2026-03-30T07:27:31Z",
+                    "added_date": "2026-03-30T07:46:36Z",
                     "name": "0.1.0"
                 }
             ]

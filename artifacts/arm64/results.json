@@ -10,7 +10,7 @@
         "passed": [
             {
                 "name": "HasLicense",
-                "elapsed_time": 0,
+                "elapsed_time": 2,
                 "description": "Checking if terms and conditions applicable to the software including open source licensing information are present. The license must be at /licenses"
             },
             {
@@ -20,12 +20,12 @@
             },
             {
                 "name": "LayerCountAcceptable",
-                "elapsed_time": 0,
+                "elapsed_time": 2,
                 "description": "Checking if container has less than 40 layers.  Too many layers within the container images can degrade container performance."
             },
             {
                 "name": "HasNoProhibitedPackages",
-                "elapsed_time": 93,
+                "elapsed_time": 106,
                 "description": "Checks to ensure that the image in use does not include prohibited packages, such as Red Hat Enterprise Linux (RHEL) kernel packages."
             },
             {
@@ -35,7 +35,7 @@
             },
             {
                 "name": "HasNoProhibitedLabels",
-                "elapsed_time": 0,
+                "elapsed_time": 1,
                 "description": "Checking if the labels (name, vendor, maintainer) violate Red Hat trademark."
             },
             {
@@ -45,12 +45,12 @@
             },
             {
                 "name": "HasModifiedFiles",
-                "elapsed_time": 24425,
+                "elapsed_time": 31405,
                 "description": "Checks that no files installed via RPM in the base Red Hat layer have been modified"
             },
             {
                 "name": "BasedOnUbi",
-                "elapsed_time": 2178,
+                "elapsed_time": 2476,
                 "description": "Checking if the container's base image is based upon the Red Hat Universal Base Image (UBI)"
             },
             {

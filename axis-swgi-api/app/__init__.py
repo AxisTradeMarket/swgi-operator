@@ -1,1 +1,0 @@
-"""SWGI OpenShift service package."""

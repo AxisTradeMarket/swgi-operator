@@ -2,7 +2,7 @@
 
 - Operator image: `localhost/axis-swgi-operator:0.1.0`
 - Operator image (Quay): `quay.io/axis919/swgi-operator:0.1.0`
-- Operand image: `localhost/axis-swgi-api:0.1.0`
+- Operand image: published from separate operand repository
 - Bundle image: `localhost/axis-swgi-operator-bundle:0.1.0`
 - Catalog image: `localhost/axis-swgi-operator-index:0.1.0`
 - Red Hat Connect operator path attempted: `registry.connect.redhat.com/axissystems/69a1ea5d9ff73edc46ba7323:latest`
