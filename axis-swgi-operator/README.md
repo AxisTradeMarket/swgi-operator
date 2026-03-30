@@ -44,3 +44,6 @@ For a direct cluster install without OLM, apply:
 kubectl apply -k axis-swgi-operator/config/default
 kubectl apply -f axis-swgi-operator/config/samples/swgi_v1alpha1_swgideployment.yaml
 ```
+
+Build and publish note:
+- Use the repository root `commands-run.txt` as the current command runbook for image build, Quay push, RHCC bundle publication, and preflight steps.
