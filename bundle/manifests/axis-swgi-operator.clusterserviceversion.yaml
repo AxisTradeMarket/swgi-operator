@@ -1,0 +1,135 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: ClusterServiceVersion
+metadata:
+  name: axis-swgi-operator.v0.1.0
+  namespace: placeholder
+  annotations:
+    alm-examples: |-
+      [
+        {
+          "apiVersion": "swgi.io/v1alpha1",
+          "kind": "SwgiDeployment",
+          "metadata": {
+            "name": "swgi-openshift"
+          },
+          "spec": {
+            "image": "registry.connect.redhat.com/axissystems/swgi-core:0.1.0",
+            "replicas": 1,
+            "port": 8080
+          }
+        }
+      ]
+    capabilities: Basic Install
+    categories: Security,Developer Tools
+    certified: "false"
+    containerImage: registry.connect.redhat.com/axissystems/axis-swgi-operator:0.1.0
+    createdAt: "2026-03-18T00:00:00Z"
+    description: SWGI operator bundle for Red Hat Connect certification testing.
+    operators.openshift.io/infrastructure-features: '["disconnected"]'
+    operators.operatorframework.io/builder: operator-sdk-v1.38.0
+    repository: https://github.com/AxisTradeMarket/axis-swgi-operator
+    support: SWGI
+spec:
+  displayName: SWGI Operator
+  description: |
+    SWGI Operator manages lifecycle, scaling, and configuration for the SWGI
+    OpenShift operand. The execution path remains in the SWGI API image while
+    the operator owns deployment plumbing through the SwgiDeployment CRD.
+  version: 0.1.0
+  maturity: alpha
+  provider:
+    name: SWGI
+  maintainers:
+    - name: SWGI
+      email: support@example.com
+  links:
+    - name: Source Code
+      url: https://github.com/AxisTradeMarket/axis-swgi-operator
+  keywords:
+    - swgi
+    - openshift
+    - operator
+  minKubeVersion: 1.27.0
+  installModes:
+    - type: OwnNamespace
+      supported: true
+    - type: SingleNamespace
+      supported: true
+    - type: MultiNamespace
+      supported: false
+    - type: AllNamespaces
+      supported: false
+  cleanup:
+    enabled: false
+  install:
+    strategy: deployment
+    spec:
+      clusterPermissions:
+        - serviceAccountName: axis-swgi-operator
+          rules:
+            - apiGroups: ["swgi.io"]
+              resources: ["swgideployments", "swgideployments/status", "swgideployments/finalizers"]
+              verbs: ["get", "list", "watch", "create", "update", "patch"]
+            - apiGroups: [""]
+              resources: ["configmaps", "secrets", "services", "events"]
+              verbs: ["get", "list", "watch", "create", "update", "patch", "delete"]
+            - apiGroups: ["apps"]
+              resources: ["deployments"]
+              verbs: ["get", "list", "watch", "create", "update", "patch", "delete"]
+      permissions:
+        - serviceAccountName: axis-swgi-operator
+          rules:
+            - apiGroups: [""]
+              resources: ["pods"]
+              verbs: ["get", "list", "watch"]
+      deployments:
+        - name: axis-swgi-operator
+          spec:
+            replicas: 1
+            selector:
+              matchLabels:
+                app: axis-swgi-operator
+            template:
+              metadata:
+                labels:
+                  app: axis-swgi-operator
+              spec:
+                serviceAccountName: axis-swgi-operator
+                securityContext:
+                  runAsNonRoot: true
+                  seccompProfile:
+                    type: RuntimeDefault
+                containers:
+                  - name: axis-swgi-operator
+                    image: registry.connect.redhat.com/axissystems/axis-swgi-operator:0.1.0
+                    imagePullPolicy: IfNotPresent
+                    command:
+                      - kopf
+                    args:
+                      - run
+                      - /opt/app-root/src/axis-swgi-operator/controller/main.py
+                    resources:
+                      requests:
+                        cpu: 100m
+                        memory: 128Mi
+                      limits:
+                        cpu: 500m
+                        memory: 512Mi
+                    securityContext:
+                      allowPrivilegeEscalation: false
+                      capabilities:
+                        drop: ["ALL"]
+                      runAsNonRoot: true
+                      runAsUser: 10001
+  customresourcedefinitions:
+    owned:
+      - name: swgideployments.swgi.io
+        version: v1alpha1
+        kind: SwgiDeployment
+        displayName: SWGI Deployment
+        description: Declares the desired SWGI operand deployment and runtime configuration.
+  relatedImages:
+    - name: axis-swgi-operator
+      image: registry.connect.redhat.com/axissystems/axis-swgi-operator:0.1.0
+    - name: swgi-openshift
+      image: registry.connect.redhat.com/axissystems/swgi-core:0.1.0
