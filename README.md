@@ -24,9 +24,3 @@ This workspace contains the SWGI operator packaging assets needed for the curren
   validation/
 ```
 
-Operand note:
-- The SWGI operand image is maintained and published from a separate repository.
-- This repo is responsible for the operator image, bundle image, catalog image, and operator certification artifacts.
-
-Workflow note:
-- Use `commands-run.txt` for the current build, push, and certification command sequence.
