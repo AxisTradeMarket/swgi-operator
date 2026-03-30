@@ -1,5 +1,5 @@
 {
-    "image": "quay.io/axis919/swgi-core:0.1.0",
+    "image": "quay.io/axis919/swgi-operator:0.1.0",
     "passed": true,
     "test_library": {
         "name": "github.com/redhat-openshift-ecosystem/openshift-preflight",
@@ -25,7 +25,7 @@
             },
             {
                 "name": "HasNoProhibitedPackages",
-                "elapsed_time": 18,
+                "elapsed_time": 93,
                 "description": "Checks to ensure that the image in use does not include prohibited packages, such as Red Hat Enterprise Linux (RHEL) kernel packages."
             },
             {
@@ -45,12 +45,12 @@
             },
             {
                 "name": "HasModifiedFiles",
-                "elapsed_time": 5017,
+                "elapsed_time": 24425,
                 "description": "Checks that no files installed via RPM in the base Red Hat layer have been modified"
             },
             {
                 "name": "BasedOnUbi",
-                "elapsed_time": 1707,
+                "elapsed_time": 2178,
                 "description": "Checking if the container's base image is based upon the Red Hat Universal Base Image (UBI)"
             },
             {

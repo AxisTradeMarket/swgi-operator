@@ -2,11 +2,11 @@
 apiVersion: route.openshift.io/v1
 kind: Route
 metadata:
-  name: {{ include "swgi-openshift.fullname" . }}
+  name: {{ include "axis-swgi-api.fullname" . }}
 spec:
   to:
     kind: Service
-    name: {{ include "swgi-openshift.fullname" . }}
+    name: {{ include "axis-swgi-api.fullname" . }}
   port:
     targetPort: http
   {{- if .Values.route.host }}

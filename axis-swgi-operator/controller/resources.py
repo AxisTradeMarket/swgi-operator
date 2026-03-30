@@ -6,7 +6,8 @@ from typing import Any
 
 def labels(name: str) -> dict[str, str]:
     return {
-        "app.kubernetes.io/name": "swgi-openshift",
+        "app.kubernetes.io/name": "axis-swgi-api",
+        "app.kubernetes.io/component": "api",
         "app.kubernetes.io/managed-by": "axis-swgi-operator",
         "app.kubernetes.io/instance": name,
     }
@@ -26,7 +27,7 @@ def configmap_manifest(
         "LOG_FORMAT": str(spec.get("logFormat", "json")),
         "SWGI_ORG_ID": str(spec.get("orgId", "org-prod")),
         "SWGI_NODE_ID": str(spec.get("nodeId", "fen-ocp-001")),
-        "POLICY_PATH": str(spec.get("policyPath", "/opt/app-root/src/swgi-openshift/data/input/policy.json")),
+        "POLICY_PATH": str(spec.get("policyPath", "/opt/app-root/src/axis-swgi-api/data/input/policy.json")),
         "SIGNING_KEY_PATH": "/tmp/secrets/signing_key_ed25519.pem",
         "RECEIPT_STORE_BACKEND": str(spec.get("receiptStoreBackend", "sqlite")),
         "RECEIPT_DB_PATH": str(spec.get("receiptDbPath", "/tmp/swgi/receipts.db")),
@@ -120,7 +121,7 @@ def deployment_manifest(
         )
     )
     container = {
-        "name": "swgi-openshift",
+        "name": "axis-swgi-api",
         "image": image,
         "imagePullPolicy": "IfNotPresent",
         "ports": [{"containerPort": port, "name": "http"}],

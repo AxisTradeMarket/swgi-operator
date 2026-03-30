@@ -1,7 +1,7 @@
 apiVersion: swgi.io/v1alpha1
 kind: SwgiDeployment
 metadata:
-  name: swgi-openshift
+  name: axis-swgi-api
   namespace: swgi-system
 spec:
   image: registry.connect.redhat.com/axissystems/swgi-core:0.1.0
@@ -12,7 +12,7 @@ spec:
   logFormat: json
   orgId: org-prod
   nodeId: fen-ocp-001
-  policyPath: /opt/app-root/src/swgi-openshift/data/input/policy.json
+  policyPath: /opt/app-root/src/axis-swgi-api/data/input/policy.json
   receiptStoreBackend: sqlite
   receiptDbPath: /tmp/swgi/receipts.db
   dbConnectTimeoutSeconds: 5

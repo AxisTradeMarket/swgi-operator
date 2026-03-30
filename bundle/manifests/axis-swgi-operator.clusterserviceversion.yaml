@@ -10,7 +10,7 @@ metadata:
           "apiVersion": "swgi.io/v1alpha1",
           "kind": "SwgiDeployment",
           "metadata": {
-            "name": "swgi-openshift"
+            "name": "axis-swgi-api"
           },
           "spec": {
             "image": "registry.connect.redhat.com/axissystems/swgi-core:0.1.0",
@@ -131,5 +131,5 @@ spec:
   relatedImages:
     - name: axis-swgi-operator
       image: registry.connect.redhat.com/axissystems/axis-swgi-operator:0.1.0
-    - name: swgi-openshift
+    - name: axis-swgi-api
       image: registry.connect.redhat.com/axissystems/swgi-core:0.1.0

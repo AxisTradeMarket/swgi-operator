@@ -2,8 +2,8 @@
 
 ## Build images
 ```bash
-podman build -f swgi-openshift/Dockerfile -t swgi-openshift:0.1.0 .
-podman tag swgi-openshift:0.1.0 registry.connect.redhat.com/axissystems/swgi-core:0.1.0
+podman build -f axis-swgi-api/Dockerfile -t axis-swgi-api:0.1.0 .
+podman tag axis-swgi-api:0.1.0 registry.connect.redhat.com/axissystems/swgi-core:0.1.0
 
 podman build -f axis-swgi-operator/Dockerfile -t axis-swgi-operator:0.1.0 .
 podman tag axis-swgi-operator:0.1.0 registry.connect.redhat.com/axissystems/axis-swgi-operator:0.1.0

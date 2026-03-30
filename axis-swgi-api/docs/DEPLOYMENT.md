@@ -10,7 +10,7 @@ If the Connect UI still shows an empty `Repository path`, save or submit the con
 
 ## Deploy
 ```bash
-helm upgrade --install swgi-openshift ./helm/swgi-openshift \
+helm upgrade --install axis-swgi-api ./helm/axis-swgi-api \
   --namespace swgi-system \
   --create-namespace \
   --set image.repository=registry.connect.redhat.com/axissystems/swgi-core \
@@ -25,8 +25,8 @@ helm upgrade --install swgi-openshift ./helm/swgi-openshift \
 ## Push Image
 ```bash
 cd /Users/zohaibahmad/Desktop/swgi-redhat
-docker build -f swgi-openshift/Dockerfile -t swgi-openshift:0.1.0 .
-podman tag swgi-openshift:0.1.0 registry.connect.redhat.com/axissystems/swgi-core:0.1.0
+docker build -f axis-swgi-api/Dockerfile -t axis-swgi-api:0.1.0 .
+podman tag axis-swgi-api:0.1.0 registry.connect.redhat.com/axissystems/swgi-core:0.1.0
 podman push registry.connect.redhat.com/axissystems/swgi-core:0.1.0
 ```
 
@@ -34,17 +34,17 @@ podman push registry.connect.redhat.com/axissystems/swgi-core:0.1.0
 ```bash
 oc get all -n swgi-system
 oc get route -n swgi-system
-oc logs deploy/swgi-openshift -n swgi-system
+oc logs deploy/axis-swgi-api -n swgi-system
 ```
 
 ## Upgrade
 ```bash
-helm upgrade swgi-openshift ./helm/swgi-openshift -n swgi-system
+helm upgrade axis-swgi-api ./helm/axis-swgi-api -n swgi-system
 ```
 
 ## Uninstall
 ```bash
-helm uninstall swgi-openshift -n swgi-system
+helm uninstall axis-swgi-api -n swgi-system
 ```
 
 The chart keeps configuration externalized through ConfigMap and Secret. SQLite is the active store

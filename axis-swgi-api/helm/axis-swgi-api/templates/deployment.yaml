@@ -1,24 +1,24 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ include "swgi-openshift.fullname" . }}
+  name: {{ include "axis-swgi-api.fullname" . }}
 spec:
   replicas: {{ .Values.replicaCount }}
   selector:
     matchLabels:
-      app: {{ include "swgi-openshift.fullname" . }}
+      app: {{ include "axis-swgi-api.fullname" . }}
   template:
     metadata:
       labels:
-        app: {{ include "swgi-openshift.fullname" . }}
+        app: {{ include "axis-swgi-api.fullname" . }}
     spec:
-      serviceAccountName: {{ include "swgi-openshift.serviceAccountName" . }}
+      serviceAccountName: {{ include "axis-swgi-api.serviceAccountName" . }}
       securityContext:
         runAsNonRoot: true
         seccompProfile:
           type: RuntimeDefault
       containers:
-        - name: swgi-openshift
+        - name: axis-swgi-api
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
@@ -26,9 +26,9 @@ spec:
               containerPort: 8080
           envFrom:
             - configMapRef:
-                name: {{ include "swgi-openshift.fullname" . }}
+                name: {{ include "axis-swgi-api.fullname" . }}
             - secretRef:
-                name: {{ include "swgi-openshift.fullname" . }}
+                name: {{ include "axis-swgi-api.fullname" . }}
           volumeMounts:
             - name: signing-key
               mountPath: /tmp/secrets
@@ -52,7 +52,7 @@ spec:
       volumes:
         - name: signing-key
           secret:
-            secretName: {{ include "swgi-openshift.fullname" . }}
+            secretName: {{ include "axis-swgi-api.fullname" . }}
             items:
               - key: signing_key_ed25519.pem
                 path: signing_key_ed25519.pem

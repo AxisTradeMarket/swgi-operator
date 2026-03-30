@@ -22,7 +22,7 @@ config:
   logFormat: json
   swgiOrgId: org-prod
   swgiNodeId: fen-ocp-001
-  policyPath: /opt/app-root/src/swgi-openshift/data/input/policy.json
+  policyPath: /opt/app-root/src/axis-swgi-api/data/input/policy.json
   signingKeyPath: /tmp/secrets/signing_key_ed25519.pem
   receiptStoreBackend: sqlite
   receiptDbPath: /tmp/swgi/receipts.db

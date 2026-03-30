@@ -1,11 +1,11 @@
 # Axis SWGI Operator
 
-`axis-swgi-operator` is the control-plane component described in the Red Hat handoff. It keeps the SWGI execution path separate by managing only deployment, scaling, configuration, and lifecycle for the existing `swgi-openshift` operand image.
+`axis-swgi-operator` is the control-plane component described in the Red Hat handoff. It keeps the SWGI execution path separate by managing only deployment, scaling, configuration, and lifecycle for the existing `axis-swgi-api` operand image.
 
 ## Scope
 - Defines the `SwgiDeployment` custom resource
 - Reconciles the SWGI operand `Deployment`, `Service`, `ConfigMap`, and `Secret`
-- Keeps execution-path logic in `swgi-openshift`; the operator only manages runtime plumbing
+- Keeps execution-path logic in `axis-swgi-api`; the operator only manages runtime plumbing
 
 ## Layout
 - `controller/main.py`: Kopf-based reconcile loop

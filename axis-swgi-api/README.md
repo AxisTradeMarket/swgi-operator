@@ -1,6 +1,6 @@
-# SWGI OpenShift
+# Axis SWGI API
 
-`swgi-openshift` is the production-oriented SWGI service scaffold. It builds on `swgi_core`, currently uses SQLite for receipt persistence,
+`axis-swgi-api` is the production-oriented SWGI service scaffold. It builds on `swgi_core`, currently uses SQLite for receipt persistence,
 exposes versioned `/v1/...` APIs, enforces token-based auth with `admin` and `viewer` roles, and
 ships with a Helm chart for OpenShift deployment.
 
@@ -23,7 +23,7 @@ ships with a Helm chart for OpenShift deployment.
 
 ### 1. Prepare environment
 ```bash
-cd /Users/zohaibahmad/Desktop/swgi-redhat/swgi-openshift
+cd /Users/zohaibahmad/Desktop/swgi-redhat/axis-swgi-api
 cp .env.example .env
 openssl genpkey -algorithm Ed25519 -out data/input/signing_key_ed25519.pem
 ```
@@ -91,8 +91,8 @@ Current storage note:
 ## Container build
 ```bash
 cd /Users/zohaibahmad/Desktop/swgi-redhat
-docker build -f swgi-openshift/Dockerfile -t swgi-openshift:0.1.0 .
-podman tag swgi-openshift:0.1.0 registry.connect.redhat.com/axissystems/swgi-core:0.1.0
+docker build -f axis-swgi-api/Dockerfile -t axis-swgi-api:0.1.0 .
+podman tag axis-swgi-api:0.1.0 registry.connect.redhat.com/axissystems/swgi-core:0.1.0
 podman push registry.connect.redhat.com/axissystems/swgi-core:0.1.0
 ```
 
@@ -103,7 +103,7 @@ Red Hat Connect note:
 
 ## Helm deployment
 ```bash
-helm upgrade --install swgi-openshift ./swgi-openshift/helm/swgi-openshift \
+helm upgrade --install axis-swgi-api ./axis-swgi-api/helm/axis-swgi-api \
   --namespace swgi-system \
   --create-namespace \
   --set image.repository=registry.connect.redhat.com/axissystems/swgi-core \

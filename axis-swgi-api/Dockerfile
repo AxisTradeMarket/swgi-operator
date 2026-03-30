@@ -18,10 +18,10 @@ RUN microdnf install -y python3.11 python3.11-pip shadow-utils && microdnf clean
 RUN ln -sf /usr/bin/python3.11 /usr/bin/python3 && ln -sf /usr/bin/pip3.11 /usr/bin/pip3
 
 COPY swgi_core /opt/app-root/src/swgi_core
-COPY swgi-openshift /opt/app-root/src/swgi-openshift
-COPY swgi-openshift/licenses /licenses
+COPY axis-swgi-api /opt/app-root/src/axis-swgi-api
+COPY axis-swgi-api/licenses /licenses
 
-WORKDIR /opt/app-root/src/swgi-openshift
+WORKDIR /opt/app-root/src/axis-swgi-api
 RUN pip3 install --upgrade pip && pip3 install -r requirements.txt
 RUN useradd --uid 10001 --create-home --shell /sbin/nologin appuser && \
     mkdir -p /tmp/secrets && \

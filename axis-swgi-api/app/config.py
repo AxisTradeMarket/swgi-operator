@@ -7,7 +7,7 @@ from pydantic import BaseModel, Field
 
 
 class Settings(BaseModel):
-    app_name: str = "swgi-openshift"
+    app_name: str = "axis-swgi-api"
     app_version: str = "0.1.0"
     host: str = Field(default_factory=lambda: os.getenv("HOST", "0.0.0.0"))
     port: int = Field(default_factory=lambda: int(os.getenv("PORT", "8080")))
@@ -36,7 +36,7 @@ class Settings(BaseModel):
 
     def validate_runtime(self) -> None:
         if self.swgi_mode != "production":
-            raise ValueError("swgi-openshift requires SWGI_MODE=production")
+            raise ValueError("axis-swgi-api requires SWGI_MODE=production")
         if self.receipt_store_backend not in {"sqlite", "postgres"}:
             raise ValueError("RECEIPT_STORE_BACKEND must be sqlite or postgres")
         if self.receipt_store_backend == "sqlite" and not self.receipt_db_path:

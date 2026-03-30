@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{ include "swgi-openshift.fullname" . }}
+  name: {{ include "axis-swgi-api.fullname" . }}
 spec:
   type: {{ .Values.service.type }}
   selector:
-    app: {{ include "swgi-openshift.fullname" . }}
+    app: {{ include "axis-swgi-api.fullname" . }}
   ports:
     - name: http
       port: {{ .Values.service.port }}

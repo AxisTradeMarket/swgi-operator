@@ -1,1 +1,3 @@
-# Populate with upgrade output showing N -> N+1 succeeds cleanly.
+# Local packaging evidence
+- No cluster upgrade flow was executed from this environment.
+- Upgrade validation remains pending on a real OpenShift cluster.

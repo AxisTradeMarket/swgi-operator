@@ -1,5 +1,5 @@
 apiVersion: v2
-name: swgi-openshift
+name: axis-swgi-api
 description: SWGI OpenShift authorization API
 type: application
 version: 0.1.0

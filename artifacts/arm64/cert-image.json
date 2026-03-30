@@ -1,171 +1,186 @@
 {
     "certified": false,
     "deleted": false,
-    "docker_image_digest": "sha256:ad938716978c797a67698d4edd89a766b2a59626ad00999038bad4e76c53587b",
-    "docker_image_id": "sha256:5c583cecea4b15df42e85c6925227cd83281f54a2a88f021c230e03d44801f0b",
-    "image_id": "sha256:ad938716978c797a67698d4edd89a766b2a59626ad00999038bad4e76c53587b",
+    "docker_image_digest": "sha256:bd06e708973ccded6a3a0f62406d8d5ac3c79c79451f7633e8cb33a5c089ed5c",
+    "docker_image_id": "sha256:9dd2ce982848caf4b6dc3541c1031533e5b0a7bfb500a2e57c71045f1c55019f",
+    "image_id": "sha256:bd06e708973ccded6a3a0f62406d8d5ac3c79c79451f7633e8cb33a5c089ed5c",
     "parsed_data": {
         "architecture": "arm64",
-        "command": "python3 -m app.main",
-        "created": "2026-03-18 20:09:37.22170214 +0000 UTC",
-        "image_id": "sha256:ad938716978c797a67698d4edd89a766b2a59626ad00999038bad4e76c53587b",
+        "created": "2026-03-30 07:24:53.804432245 +0000 UTC",
+        "image_id": "sha256:bd06e708973ccded6a3a0f62406d8d5ac3c79c79451f7633e8cb33a5c089ed5c",
         "labels": [
             {
-                "name": "io.openshift.expose-services",
-                "value": ""
-            },
-            {
                 "name": "maintainer",
-                "value": "Zohaib Ahmad"
-            },
-            {
-                "name": "vcs-ref",
-                "value": "ddf3e9d218968613397a7b4df7547f25ad755449"
-            },
-            {
-                "name": "vcs-type",
-                "value": "git"
-            },
-            {
-                "name": "description",
-                "value": "Core service for the SWGI platform."
-            },
-            {
-                "name": "distribution-scope",
-                "value": "public"
-            },
-            {
-                "name": "io.k8s.display-name",
-                "value": "Red Hat Universal Base Image 9 Minimal"
+                "value": "support@example.com"
             },
             {
                 "name": "name",
-                "value": "swgi-core"
+                "value": "swgi-operator"
             },
             {
                 "name": "org.opencontainers.image.created",
-                "value": "2026-03-11T04:53:07Z"
+                "value": "2026-03-26T04:44:03Z"
             },
             {
-                "name": "architecture",
-                "value": "aarch64"
-            },
-            {
-                "name": "io.buildah.version",
-                "value": "1.43.0"
-            },
-            {
-                "name": "org.opencontainers.image.revision",
-                "value": "ddf3e9d218968613397a7b4df7547f25ad755449"
-            },
-            {
-                "name": "summary",
-                "value": "SWGI core service"
-            },
-            {
-                "name": "vendor",
-                "value": "Axis Systems"
-            },
-            {
-                "name": "build-date",
-                "value": "2026-03-11T04:53:07Z"
+                "name": "vcs-ref",
+                "value": "21d23409bb4dd6d7d4a99128a5ca40e2de4dd978"
             },
             {
                 "name": "com.redhat.component",
-                "value": "ubi9-minimal-container"
+                "value": "python-311-container"
             },
             {
-                "name": "cpe",
-                "value": "cpe:/a:redhat:enterprise_linux:9::appstream"
+                "name": "io.k8s.display-name",
+                "value": "Python 3.11"
+            },
+            {
+                "name": "io.openshift.s2i.scripts-url",
+                "value": "image:///usr/libexec/s2i"
             },
             {
                 "name": "io.openshift.tags",
-                "value": "minimal rhel9"
+                "value": "builder,python,python311,python-311,rh-python311"
+            },
+            {
+                "name": "org.opencontainers.image.revision",
+                "value": "21d23409bb4dd6d7d4a99128a5ca40e2de4dd978"
             },
             {
                 "name": "release",
                 "value": "1"
             },
             {
-                "name": "url",
-                "value": "https://catalog.redhat.com/en/search?searchType=containers"
+                "name": "summary",
+                "value": "SWGI operator control plane"
             },
             {
-                "name": "version",
-                "value": "0.1.0"
+                "name": "url",
+                "value": "https://catalog.redhat.com/en/search?searchType=containers"
             },
             {
                 "name": "com.redhat.license_terms",
                 "value": "https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
             },
             {
+                "name": "distribution-scope",
+                "value": "public"
+            },
+            {
+                "name": "io.buildah.version",
+                "value": "1.43.0"
+            },
+            {
                 "name": "io.k8s.description",
-                "value": "The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
+                "value": "Python 3.11 available as container is a base platform for building and running various Python 3.11 applications and frameworks. Python is an easy to learn, powerful programming language. It has efficient high-level data structures and a simple but effective approach to object-oriented programming. Python's elegant syntax and dynamic typing, together with its interpreted nature, make it an ideal language for scripting and rapid application development in many areas on most platforms."
+            },
+            {
+                "name": "architecture",
+                "value": "aarch64"
+            },
+            {
+                "name": "cpe",
+                "value": "cpe:/a:redhat:enterprise_linux:9::appstream"
+            },
+            {
+                "name": "io.buildpacks.stack.id",
+                "value": "com.redhat.stacks.ubi9-python-311"
+            },
+            {
+                "name": "io.s2i.scripts-url",
+                "value": "image:///usr/libexec/s2i"
+            },
+            {
+                "name": "usage",
+                "value": "s2i build https://github.com/sclorg/s2i-python-container.git --context-dir=3.11/test/setup-test-app/ ubi9/python-311 python-sample-app"
+            },
+            {
+                "name": "vcs-type",
+                "value": "git"
+            },
+            {
+                "name": "vendor",
+                "value": "Axis Systems"
+            },
+            {
+                "name": "version",
+                "value": "0.1.0"
+            },
+            {
+                "name": "build-date",
+                "value": "2026-03-26T04:44:03Z"
+            },
+            {
+                "name": "description",
+                "value": "Kubernetes operator that manages SWGI operand deployment, scaling, lifecycle, and configuration."
+            },
+            {
+                "name": "io.openshift.expose-services",
+                "value": "8080:http"
             }
         ],
         "layers": [
-            "sha256:d21fe59318b4563fba86bcf7017acff79045a0e9d5182969c5cbabab18dc1f0a",
-            "sha256:bf0e63d18bea9fb32e8decad3bf36b4549b1fa3a3fd5c28f19b7b3fd3e285b8c",
-            "sha256:a2562392ed00c7c782e010e8293d43714df4c28ab7edab0b418b3019c037271a",
-            "sha256:8a280fa4cf3301dd380f11981ea97c8f4ce754df5b22a8a683140e929c9dc95b",
-            "sha256:6096a88664c125495d15f1066a86890ff4202d9bd829410fdc3b196c8d00f2c5",
-            "sha256:cb7466a4352d2be31dbd7b5696f0af4e9518f70b93662507177ff224b26a2523",
-            "sha256:3ed293321f59326f47fb18390a1d46c38fe484f1710919cab915c78ac79037fe",
-            "sha256:a929c158045efa38dcdfac5809dfda6e7c13c225e0aae109412941b4ed8f3880"
+            "sha256:353d464a1ee38ca7a9e91002aba59d6ddc9738253a71a72c8b23d552db5df244",
+            "sha256:70a85920977fbcbcb9f742af1644579feddf556c7198ab4822f3824905efecad",
+            "sha256:c05beba7d975ef799d7d7565a5bf724389b7f37b6b74aeaaa7fd358e26cb03b3",
+            "sha256:f927e3bf80e14acf49624943c037d2b374bee3d5310acb58e3daba7431a5a2ac",
+            "sha256:207e2f1b66ba5cb41a456d36ba73066e5acd84859ccdc316cb45a0fb3e02e607",
+            "sha256:989f88ffb3beca96e0c8fbfd8f6550dc9f143de34e1fe082824d185b3851b260",
+            "sha256:eef688042dda9dfe9bafd677cf2e8da8eff09964a600e65669c2aac9c224c5d3",
+            "sha256:494dc3c2cfe4f1ed18609a777966f266cf50a5d34db693c006336cb646cdce2f"
         ],
         "os": "linux",
-        "size": 1793,
+        "size": 1795,
         "uncompressed_layer_sizes": [
             {
-                "layer_id": "sha256:c7410a127a918b80107d9a2217152d5a03ecd574be33abc513393bf0d912b520",
-                "size_bytes": 110461440
+                "layer_id": "sha256:e59b09321b7fac6e06c6c4bfa751d57749307690f96546cd9738bce396a8061f",
+                "size_bytes": 235341824
             },
             {
-                "layer_id": "sha256:c1eb4a465ce6de9dd6106796be90cbfa84b6e5dd555ce632d35e924215ba6b72",
-                "size_bytes": 96671232
+                "layer_id": "sha256:d579da3cfa0161285876f04dbd482126c2cbe518698dab09a3025b7ea53c3a03",
+                "size_bytes": 60578304
             },
             {
-                "layer_id": "sha256:da89036a449a70210719278ec3793014750e0be0bdb721def6865b4f5fd83bb1",
-                "size_bytes": 3072
+                "layer_id": "sha256:0f70cbe982cfef94faeb0322ba8b782e92e1f51459348dcc2c27b2a661330905",
+                "size_bytes": 602246144
             },
             {
-                "layer_id": "sha256:dfaf0099b27d9fe2115248fbd65f77954607499e68e85fd03d349c09b3b54ffa",
-                "size_bytes": 48163328
+                "layer_id": "sha256:bbe9457ac7105122c48dbaf05a9056fb601b6e6ca7cd88600afbec6b461e9bf0",
+                "size_bytes": 212309504
             },
             {
-                "layer_id": "sha256:9cb7d9bf4ab608cd2c90a9a849399b0a567857e182e657adab797c7efaf1408e",
-                "size_bytes": 189440
+                "layer_id": "sha256:d3f4ad94e52f2aa46c5190409c828adf642ccf200e68249aeefb7b422862765e",
+                "size_bytes": 3584
             },
             {
-                "layer_id": "sha256:8c83f22f929dab8ce2642e4de13312cae6a47fb26a7425b8e955e5e8731e8753",
+                "layer_id": "sha256:278b5dd06c447139273e04cb2776a28e9a5e35c3f46c9bf93048722bbb68c5dc",
+                "size_bytes": 73092608
+            },
+            {
+                "layer_id": "sha256:f3f142762f1881f7bf9d70f2b52f5907f2132d61812ab41c778330deb7bab7cd",
+                "size_bytes": 66560
+            },
+            {
+                "layer_id": "sha256:d75a1e79c81714b85cf8239d24003d60e0e6d79b6e67341562817264993f5f7d",
                 "size_bytes": 2560
-            },
-            {
-                "layer_id": "sha256:da4231c1167eba267295941a159cf058a0b18967f43b71288d5baae29adf9a00",
-                "size_bytes": 78049280
-            },
-            {
-                "layer_id": "sha256:6027e8962b2472f0cd050764bd52a13f56ec5922c23db5a7a8d02c808030acdc",
-                "size_bytes": 48370688
             }
         ]
     },
     "architecture": "arm64",
-    "raw_config": "{\"created\":\"2026-03-18T20:09:37.22170214Z\",\"architecture\":\"arm64\",\"os\":\"linux\",\"variant\":\"v8\",\"config\":{\"User\":\"10001\",\"ExposedPorts\":{\"8080/tcp\":{}},\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"container=oci\",\"PYTHONDONTWRITEBYTECODE=1\",\"PYTHONUNBUFFERED=1\",\"PIP_NO_CACHE_DIR=1\"],\"Cmd\":[\"python3\",\"-m\",\"app.main\"],\"WorkingDir\":\"/opt/app-root/src/swgi-openshift\",\"Labels\":{\"architecture\":\"aarch64\",\"build-date\":\"2026-03-11T04:53:07Z\",\"com.redhat.component\":\"ubi9-minimal-container\",\"com.redhat.license_terms\":\"https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI\",\"cpe\":\"cpe:/a:redhat:enterprise_linux:9::appstream\",\"description\":\"Core service for the SWGI platform.\",\"distribution-scope\":\"public\",\"io.buildah.version\":\"1.43.0\",\"io.k8s.description\":\"The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.\",\"io.k8s.display-name\":\"Red Hat Universal Base Image 9 Minimal\",\"io.openshift.expose-services\":\"\",\"io.openshift.tags\":\"minimal rhel9\",\"maintainer\":\"Zohaib Ahmad\",\"name\":\"swgi-core\",\"org.opencontainers.image.created\":\"2026-03-11T04:53:07Z\",\"org.opencontainers.image.revision\":\"ddf3e9d218968613397a7b4df7547f25ad755449\",\"release\":\"1\",\"summary\":\"SWGI core service\",\"url\":\"https://catalog.redhat.com/en/search?searchType=containers\",\"vcs-ref\":\"ddf3e9d218968613397a7b4df7547f25ad755449\",\"vcs-type\":\"git\",\"vendor\":\"Axis Systems\",\"version\":\"0.1.0\"}},\"rootfs\":{\"type\":\"layers\",\"diff_ids\":[\"sha256:c7410a127a918b80107d9a2217152d5a03ecd574be33abc513393bf0d912b520\",\"sha256:c1eb4a465ce6de9dd6106796be90cbfa84b6e5dd555ce632d35e924215ba6b72\",\"sha256:da89036a449a70210719278ec3793014750e0be0bdb721def6865b4f5fd83bb1\",\"sha256:dfaf0099b27d9fe2115248fbd65f77954607499e68e85fd03d349c09b3b54ffa\",\"sha256:9cb7d9bf4ab608cd2c90a9a849399b0a567857e182e657adab797c7efaf1408e\",\"sha256:8c83f22f929dab8ce2642e4de13312cae6a47fb26a7425b8e955e5e8731e8753\",\"sha256:da4231c1167eba267295941a159cf058a0b18967f43b71288d5baae29adf9a00\",\"sha256:6027e8962b2472f0cd050764bd52a13f56ec5922c23db5a7a8d02c808030acdc\"]},\"history\":[{\"created\":\"2026-03-11T04:53:19.685698554Z\",\"created_by\":\"/bin/sh -c #(nop) LABEL maintainer=\\\"Red Hat, Inc.\\\"\",\"empty_layer\":true},{\"created\":\"2026-03-11T04:53:19.701722504Z\",\"created_by\":\"/bin/sh -c #(nop) LABEL vendor=\\\"Red Hat, Inc.\\\"\",\"empty_layer\":true},{\"created\":\"2026-03-11T04:53:19.718575145Z\",\"created_by\":\"/bin/sh -c #(nop) LABEL url=\\\"https://catalog.redhat.com/en/search?searchType=containers\\\"\",\"empty_layer\":true},{\"created\":\"2026-03-11T04:53:19.734551506Z\",\"created_by\":\"/bin/sh -c #(nop) LABEL com.redhat.component=\\\"ubi9-minimal-container\\\"       name=\\\"ubi9/ubi-minimal\\\"       version=\\\"9.7\\\"       cpe=\\\"cpe:/a:redhat:enterprise_linux:9::appstream\\\"       distribution-scope=\\\"public\\\"\",\"empty_layer\":true},{\"created\":\"2026-03-11T04:53:19.751016243Z\",\"created_by\":\"/bin/sh -c #(nop) LABEL com.redhat.license_terms=\\\"https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI\\\"\",\"empty_layer\":true},{\"created\":\"2026-03-11T04:53:19.767519322Z\",\"created_by\":\"/bin/sh -c #(nop) LABEL summary=\\\"Provides the latest release of the minimal Red Hat Universal Base Image 9.\\\"\",\"empty_layer\":true},{\"created\":\"2026-03-11T04:53:19.784451627Z\",\"created_by\":\"/bin/sh -c #(nop) LABEL description=\\\"The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.\\\"\",\"empty_layer\":true},{\"created\":\"2026-03-11T04:53:19.800658264Z\",\"created_by\":\"/bin/sh -c #(nop) LABEL io.k8s.description=\\\"The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.\\\"\",\"empty_layer\":true},{\"created\":\"2026-03-11T04:53:19.817120227Z\",\"created_by\":\"/bin/sh -c #(nop) LABEL io.k8s.display-name=\\\"Red Hat Universal Base Image 9 Minimal\\\"\",\"empty_layer\":true},{\"created\":\"2026-03-11T04:53:19.835883089Z\",\"created_by\":\"/bin/sh -c #(nop) LABEL io.openshift.expose-services=\\\"\\\"\",\"empty_layer\":true},{\"created\":\"2026-03-11T04:53:19.852146465Z\",\"created_by\":\"/bin/sh -c #(nop) LABEL io.openshift.tags=\\\"minimal rhel9\\\"\",\"empty_layer\":true},{\"created\":\"2026-03-11T04:53:19.868784879Z\",\"created_by\":\"/bin/sh -c #(nop) ENV container oci\",\"empty_layer\":true},{\"created\":\"2026-03-11T04:53:20.757621516Z\",\"created_by\":\"/bin/sh -c #(nop) COPY dir:7796b64b73526e8dad6fca20071cfe57334a57323fbbb1f9256c4ffffa8b27db in /      \",\"empty_layer\":true},{\"created\":\"2026-03-11T04:53:20.847771321Z\",\"created_by\":\"/bin/sh -c #(nop) COPY file:1376702515d596f414e3aa494e0daa6d408a6d2475c4aeca96bf9392f5287f69 in /etc/yum.repos.d/.      \",\"empty_layer\":true},{\"created\":\"2026-03-11T04:53:20.864551651Z\",\"created_by\":\"/bin/sh -c #(nop) CMD [\\\"/bin/bash\\\"]\",\"empty_layer\":true},{\"created\":\"2026-03-11T04:53:20.950898106Z\",\"created_by\":\"/bin/sh -c #(nop) COPY file:93583a9ebbaeff1e36b48820b647eea1eef523f6627dacfb0b21af79f5a41b35 in /usr/share/buildinfo/content-sets.json      \",\"empty_layer\":true},{\"created\":\"2026-03-11T04:53:21.038456512Z\",\"created_by\":\"/bin/sh -c #(nop) COPY file:93583a9ebbaeff1e36b48820b647eea1eef523f6627dacfb0b21af79f5a41b35 in /root/buildinfo/content_manifests/content-sets.json      \",\"empty_layer\":true},{\"created\":\"2026-03-11T04:53:21.12718901Z\",\"created_by\":\"/bin/sh -c #(nop) COPY file:186c4202737062dc84f1db98b633710a412a23c003ba73ff6ae51d727aea1cd8 in /usr/share/buildinfo/labels.json      \",\"empty_layer\":true},{\"created\":\"2026-03-11T04:53:21.218234402Z\",\"created_by\":\"/bin/sh -c #(nop) COPY file:186c4202737062dc84f1db98b633710a412a23c003ba73ff6ae51d727aea1cd8 in /root/buildinfo/labels.json      \",\"empty_layer\":true},{\"created\":\"2026-03-11T04:53:21.514772381Z\",\"created_by\":\"/bin/sh -c #(nop) LABEL \\\"architecture\\\"=\\\"aarch64\\\" \\\"vcs-type\\\"=\\\"git\\\" \\\"vcs-ref\\\"=\\\"ddf3e9d218968613397a7b4df7547f25ad755449\\\" \\\"org.opencontainers.image.revision\\\"=\\\"ddf3e9d218968613397a7b4df7547f25ad755449\\\" \\\"build-date\\\"=\\\"2026-03-11T04:53:07Z\\\" \\\"org.opencontainers.image.created\\\"=\\\"2026-03-11T04:53:07Z\\\" \\\"release\\\"=\\\"1773204619\\\"org.opencontainers.image.revision=ddf3e9d218968613397a7b4df7547f25ad755449,org.opencontainers.image.created=2026-03-11T04:53:07Z\"},{\"created\":\"2026-03-18T20:08:39.313803181Z\",\"created_by\":\"/bin/sh -c #(nop) LABEL name=\\\"swgi-core\\\"       vendor=\\\"Axis Systems\\\"       maintainer=\\\"Zohaib Ahmad\\\"       version=\\\"0.1.0\\\"       release=\\\"1\\\"       summary=\\\"SWGI core service\\\"       description=\\\"Core service for the SWGI platform.\\\"\",\"comment\":\"FROM registry.access.redhat.com/ubi9/ubi-minimal:latest\",\"empty_layer\":true},{\"created\":\"2026-03-18T20:08:39.350622674Z\",\"created_by\":\"/bin/sh -c #(nop) ENV PYTHONDONTWRITEBYTECODE=1     PYTHONUNBUFFERED=1     PIP_NO_CACHE_DIR=1\",\"empty_layer\":true},{\"created\":\"2026-03-18T20:08:39.384119413Z\",\"created_by\":\"/bin/sh -c #(nop) WORKDIR /opt/app-root/src\",\"empty_layer\":true},{\"created\":\"2026-03-18T20:08:53.09684834Z\",\"created_by\":\"/bin/sh -c microdnf install -y python3.11 python3.11-pip shadow-utils \\u0026\\u0026 microdnf clean all\"},{\"created\":\"2026-03-18T20:08:54.035342919Z\",\"created_by\":\"/bin/sh -c ln -sf /usr/bin/python3.11 /usr/bin/python3 \\u0026\\u0026 ln -sf /usr/bin/pip3.11 /usr/bin/pip3\"},{\"created\":\"2026-03-18T20:08:55.481815885Z\",\"created_by\":\"/bin/sh -c #(nop) COPY dir:f625687b84374114d58538c0e8e3383042af8f109ad1d981a4c9164bd2478424 in /opt/app-root/src/swgi_core      \"},{\"created\":\"2026-03-18T20:09:10.095888565Z\",\"created_by\":\"/bin/sh -c #(nop) COPY dir:66839d8f00f45f569ee2c62b665e9ad3e5fea821c3f89e9cf1c6a7f2762c3581 in /opt/app-root/src/swgi-openshift      \"},{\"created\":\"2026-03-18T20:09:10.28356978Z\",\"created_by\":\"/bin/sh -c #(nop) COPY dir:51c1d026c8acebd0d0c41831f549b15d1ed4df0aed5ef10a8eeb79a590b292ca in /licenses      \"},{\"created\":\"2026-03-18T20:09:10.318878896Z\",\"created_by\":\"/bin/sh -c #(nop) WORKDIR /opt/app-root/src/swgi-openshift\",\"empty_layer\":true},{\"created\":\"2026-03-18T20:09:35.269864372Z\",\"created_by\":\"/bin/sh -c pip3 install --upgrade pip \\u0026\\u0026 pip3 install -r requirements.txt\"},{\"created\":\"2026-03-18T20:09:36.701271949Z\",\"created_by\":\"/bin/sh -c useradd --uid 10001 --create-home --shell /sbin/nologin appuser \\u0026\\u0026     mkdir -p /tmp/secrets \\u0026\\u0026     chown -R 10001:0 /opt/app-root/src /tmp/secrets \\u0026\\u0026     chmod -R g=u /opt/app-root/src /tmp/secrets\"},{\"created\":\"2026-03-18T20:09:37.089719935Z\",\"created_by\":\"/bin/sh -c #(nop) USER 10001\",\"empty_layer\":true},{\"created\":\"2026-03-18T20:09:37.161518501Z\",\"created_by\":\"/bin/sh -c #(nop) EXPOSE 8080\",\"empty_layer\":true},{\"created\":\"2026-03-18T20:09:37.194436615Z\",\"created_by\":\"/bin/sh -c #(nop) HEALTHCHECK --interval=30s --timeout=5s --start-period=20s --retries=3 CMD python3 -c \\\"import urllib.request; urllib.request.urlopen('http://127.0.0.1:8080/healthz', timeout=3).read()\\\"\",\"empty_layer\":true},{\"created\":\"2026-03-18T20:09:37.221852724Z\",\"created_by\":\"/bin/sh -c #(nop) CMD [\\\"python3\\\", \\\"-m\\\", \\\"app.main\\\"]\",\"empty_layer\":true}]}",
+    "raw_config": "{\"created\":\"2026-03-30T07:24:53.804432245Z\",\"architecture\":\"arm64\",\"os\":\"linux\",\"variant\":\"v8\",\"config\":{\"User\":\"1001\",\"ExposedPorts\":{\"8080/tcp\":{}},\"Env\":[\"container=oci\",\"STI_SCRIPTS_URL=image:///usr/libexec/s2i\",\"STI_SCRIPTS_PATH=/usr/libexec/s2i\",\"APP_ROOT=/opt/app-root\",\"HOME=/opt/app-root/src\",\"PLATFORM=el9\",\"NODEJS_VER=22\",\"PYTHON_VERSION=3.11\",\"PATH=/opt/app-root/src/.local/bin/:/opt/app-root/src/bin:/opt/app-root/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"PYTHONIOENCODING=UTF-8\",\"LC_ALL=en_US.UTF-8\",\"LANG=en_US.UTF-8\",\"CNB_STACK_ID=com.redhat.stacks.ubi9-python-311\",\"CNB_USER_ID=1001\",\"CNB_GROUP_ID=0\",\"PIP_NO_CACHE_DIR=off\",\"SUMMARY=Platform for building and running Python 3.11 applications\",\"DESCRIPTION=Python 3.11 available as container is a base platform for building and running various Python 3.11 applications and frameworks. Python is an easy to learn, powerful programming language. It has efficient high-level data structures and a simple but effective approach to object-oriented programming. Python's elegant syntax and dynamic typing, together with its interpreted nature, make it an ideal language for scripting and rapid application development in many areas on most platforms.\",\"BASH_ENV=/opt/app-root/bin/activate\",\"ENV=/opt/app-root/bin/activate\",\"PROMPT_COMMAND=. /opt/app-root/bin/activate\",\"PYTHONDONTWRITEBYTECODE=1\",\"PYTHONUNBUFFERED=1\"],\"Entrypoint\":[\"kopf\",\"run\",\"/opt/app-root/src/axis-swgi-operator/controller/main.py\"],\"WorkingDir\":\"/opt/app-root/src\",\"Labels\":{\"architecture\":\"aarch64\",\"build-date\":\"2026-03-26T04:44:03Z\",\"com.redhat.component\":\"python-311-container\",\"com.redhat.license_terms\":\"https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI\",\"cpe\":\"cpe:/a:redhat:enterprise_linux:9::appstream\",\"description\":\"Kubernetes operator that manages SWGI operand deployment, scaling, lifecycle, and configuration.\",\"distribution-scope\":\"public\",\"io.buildah.version\":\"1.43.0\",\"io.buildpacks.stack.id\":\"com.redhat.stacks.ubi9-python-311\",\"io.k8s.description\":\"Python 3.11 available as container is a base platform for building and running various Python 3.11 applications and frameworks. Python is an easy to learn, powerful programming language. It has efficient high-level data structures and a simple but effective approach to object-oriented programming. Python's elegant syntax and dynamic typing, together with its interpreted nature, make it an ideal language for scripting and rapid application development in many areas on most platforms.\",\"io.k8s.display-name\":\"Python 3.11\",\"io.openshift.expose-services\":\"8080:http\",\"io.openshift.s2i.scripts-url\":\"image:///usr/libexec/s2i\",\"io.openshift.tags\":\"builder,python,python311,python-311,rh-python311\",\"io.s2i.scripts-url\":\"image:///usr/libexec/s2i\",\"maintainer\":\"support@example.com\",\"name\":\"swgi-operator\",\"org.opencontainers.image.created\":\"2026-03-26T04:44:03Z\",\"org.opencontainers.image.revision\":\"21d23409bb4dd6d7d4a99128a5ca40e2de4dd978\",\"release\":\"1\",\"summary\":\"SWGI operator control plane\",\"url\":\"https://catalog.redhat.com/en/search?searchType=containers\",\"usage\":\"s2i build https://github.com/sclorg/s2i-python-container.git --context-dir=3.11/test/setup-test-app/ ubi9/python-311 python-sample-app\",\"vcs-ref\":\"21d23409bb4dd6d7d4a99128a5ca40e2de4dd978\",\"vcs-type\":\"git\",\"vendor\":\"Axis Systems\",\"version\":\"0.1.0\"}},\"rootfs\":{\"type\":\"layers\",\"diff_ids\":[\"sha256:e59b09321b7fac6e06c6c4bfa751d57749307690f96546cd9738bce396a8061f\",\"sha256:d579da3cfa0161285876f04dbd482126c2cbe518698dab09a3025b7ea53c3a03\",\"sha256:0f70cbe982cfef94faeb0322ba8b782e92e1f51459348dcc2c27b2a661330905\",\"sha256:bbe9457ac7105122c48dbaf05a9056fb601b6e6ca7cd88600afbec6b461e9bf0\",\"sha256:d3f4ad94e52f2aa46c5190409c828adf642ccf200e68249aeefb7b422862765e\",\"sha256:278b5dd06c447139273e04cb2776a28e9a5e35c3f46c9bf93048722bbb68c5dc\",\"sha256:f3f142762f1881f7bf9d70f2b52f5907f2132d61812ab41c778330deb7bab7cd\",\"sha256:d75a1e79c81714b85cf8239d24003d60e0e6d79b6e67341562817264993f5f7d\"]},\"history\":[{\"created\":\"2026-03-23T01:05:56.566302725Z\",\"created_by\":\"/bin/sh -c #(nop) LABEL maintainer=\\\"Red Hat, Inc.\\\"       vendor=\\\"Red Hat, Inc.\\\"\",\"empty_layer\":true},{\"created\":\"2026-03-23T01:05:56.585478511Z\",\"created_by\":\"/bin/sh -c #(nop) LABEL url=\\\"https://catalog.redhat.com/en/search?searchType=containers\\\"\",\"empty_layer\":true},{\"created\":\"2026-03-23T01:05:56.604570857Z\",\"created_by\":\"/bin/sh -c #(nop) LABEL com.redhat.component=\\\"ubi9-container\\\"       name=\\\"ubi9/ubi\\\"       version=\\\"9.7\\\"       cpe=\\\"cpe:/a:redhat:enterprise_linux:9::appstream\\\"       distribution-scope=\\\"public\\\"\",\"empty_layer\":true},{\"created\":\"2026-03-23T01:05:56.623172736Z\",\"created_by\":\"/bin/sh -c #(nop) LABEL com.redhat.license_terms=\\\"https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI\\\"\",\"empty_layer\":true},{\"created\":\"2026-03-23T01:05:56.642228192Z\",\"created_by\":\"/bin/sh -c #(nop) LABEL summary=\\\"Provides the latest release of Red Hat Universal Base Image 9.\\\"\",\"empty_layer\":true},{\"created\":\"2026-03-23T01:05:56.660960969Z\",\"created_by\":\"/bin/sh -c #(nop) LABEL description=\\\"The Universal Base Image is designed and engineered to be the base layer for all of your containerized applications, middleware and utilities. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.\\\"\",\"empty_layer\":true},{\"created\":\"2026-03-23T01:05:56.67969725Z\",\"created_by\":\"/bin/sh -c #(nop) LABEL io.k8s.description=\\\"The Universal Base Image is designed and engineered to be the base layer for all of your containerized applications, middleware and utilities. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.\\\"\",\"empty_layer\":true},{\"created\":\"2026-03-23T01:05:56.697432107Z\",\"created_by\":\"/bin/sh -c #(nop) LABEL io.k8s.display-name=\\\"Red Hat Universal Base Image 9\\\"\",\"empty_layer\":true},{\"created\":\"2026-03-23T01:05:56.7156509Z\",\"created_by\":\"/bin/sh -c #(nop) LABEL io.openshift.expose-services=\\\"\\\"\",\"empty_layer\":true},{\"created\":\"2026-03-23T01:05:56.734736412Z\",\"created_by\":\"/bin/sh -c #(nop) LABEL io.openshift.tags=\\\"base rhel9\\\"\",\"empty_layer\":true},{\"created\":\"2026-03-23T01:05:56.753692117Z\",\"created_by\":\"/bin/sh -c #(nop) ENV container oci\",\"empty_layer\":true},{\"created\":\"2026-03-23T01:05:59.828947378Z\",\"created_by\":\"/bin/sh -c #(nop) COPY dir:eecbfec0cc9b26c92ca1ac6c6c8aad56bea8aedf4195571a1d6b8ad62dc0e400 in /      \",\"empty_layer\":true},{\"created\":\"2026-03-23T01:05:59.924462289Z\",\"created_by\":\"/bin/sh -c #(nop) COPY file:1376702515d596f414e3aa494e0daa6d408a6d2475c4aeca96bf9392f5287f69 in /etc/yum.repos.d/.      \",\"empty_layer\":true},{\"created\":\"2026-03-23T01:05:59.943612097Z\",\"created_by\":\"/bin/sh -c #(nop) CMD [\\\"/bin/bash\\\"]\",\"empty_layer\":true},{\"created\":\"2026-03-23T01:06:00.055401556Z\",\"created_by\":\"/bin/sh -c #(nop) COPY file:93583a9ebbaeff1e36b48820b647eea1eef523f6627dacfb0b21af79f5a41b35 in /usr/share/buildinfo/content-sets.json      \",\"empty_layer\":true},{\"created\":\"2026-03-23T01:06:00.160604546Z\",\"created_by\":\"/bin/sh -c #(nop) COPY file:93583a9ebbaeff1e36b48820b647eea1eef523f6627dacfb0b21af79f5a41b35 in /root/buildinfo/content_manifests/content-sets.json      \",\"empty_layer\":true},{\"created\":\"2026-03-23T01:06:00.257812615Z\",\"created_by\":\"/bin/sh -c #(nop) COPY file:6c88f184c3d9022037ef412e12f5ee37627c718f9ae54b0134a772180867bede in /usr/share/buildinfo/labels.json      \",\"empty_layer\":true},{\"created\":\"2026-03-23T01:06:00.353619156Z\",\"created_by\":\"/bin/sh -c #(nop) COPY file:6c88f184c3d9022037ef412e12f5ee37627c718f9ae54b0134a772180867bede in /root/buildinfo/labels.json      \",\"empty_layer\":true},{\"created\":\"2026-03-23T01:06:01.128972258Z\",\"created_by\":\"/bin/sh -c #(nop) LABEL \\\"architecture\\\"=\\\"aarch64\\\" \\\"vcs-type\\\"=\\\"git\\\" \\\"vcs-ref\\\"=\\\"526fd06210aa527e01a717af6f84741656e8d512\\\" \\\"org.opencontainers.image.revision\\\"=\\\"526fd06210aa527e01a717af6f84741656e8d512\\\" \\\"build-date\\\"=\\\"2026-03-23T01:05:39Z\\\" \\\"org.opencontainers.image.created\\\"=\\\"2026-03-23T01:05:39Z\\\" \\\"release\\\"=\\\"1774227732\\\"org.opencontainers.image.revision=526fd06210aa527e01a717af6f84741656e8d512,org.opencontainers.image.created=2026-03-23T01:05:39Z\"},{\"created\":\"2026-03-25T05:07:14.975626424Z\",\"created_by\":\"/bin/sh -c #(nop) ENV SUMMARY=\\\"Base image which allows using of source-to-image.\\\"\\t    DESCRIPTION=\\\"The s2i-core image provides any images layered on top of it with all the tools needed to use source-to-image functionality while keeping the image size as small as possible.\\\"\",\"comment\":\"FROM registry.access.redhat.com/ubi9:9.7-1774227732\",\"empty_layer\":true},{\"created\":\"2026-03-25T05:07:14.996616546Z\",\"created_by\":\"/bin/sh -c #(nop) LABEL summary=\\\"$SUMMARY\\\"       description=\\\"$DESCRIPTION\\\"       io.k8s.description=\\\"$DESCRIPTION\\\"       io.k8s.display-name=\\\"s2i core\\\"       io.openshift.s2i.scripts-url=image:///usr/libexec/s2i       io.s2i.scripts-url=image:///usr/libexec/s2i       io.openshift.tags=\\\"s2i-core rhel9\\\"       com.redhat.component=\\\"s2i-core-container\\\"       name=\\\"ubi9/s2i-core\\\"       version=\\\"1\\\"       com.redhat.license_terms=\\\"https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI\\\"\",\"empty_layer\":true},{\"created\":\"2026-03-25T05:07:15.017212303Z\",\"created_by\":\"/bin/sh -c #(nop) ENV     STI_SCRIPTS_URL=image:///usr/libexec/s2i     STI_SCRIPTS_PATH=/usr/libexec/s2i     APP_ROOT=/opt/app-root     HOME=/opt/app-root/src     PATH=/opt/app-root/src/bin:/opt/app-root/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin     PLATFORM=\\\"el9\\\"\",\"empty_layer\":true},{\"created\":\"2026-03-25T05:07:17.71310676Z\",\"created_by\":\"/bin/sh -c . /cachi2/cachi2.env \\u0026\\u0026     INSTALL_PKGS=\\\"bsdtar   findutils   groff-base   glibc-locale-source   glibc-langpack-en   gettext   rsync   scl-utils   tar   unzip   xz   yum\\\" \\u0026\\u0026   mkdir -p ${HOME}/.pki/nssdb \\u0026\\u0026   chown -R 1001:0 ${HOME}/.pki \\u0026\\u0026   yum install -y --setopt=tsflags=nodocs $INSTALL_PKGS \\u0026\\u0026   rpm -V $INSTALL_PKGS \\u0026\\u0026   yum -y clean all --enablerepo='*'\",\"empty_layer\":true},{\"created\":\"2026-03-25T05:07:17.812660786Z\",\"created_by\":\"/bin/sh -c #(nop) COPY dir:37f69665f54a97126cf208f9b880bfe35cb36cd94584f2ef77bb38008a7055bf in /      \",\"empty_layer\":true},{\"created\":\"2026-03-25T05:07:17.832618288Z\",\"created_by\":\"/bin/sh -c #(nop) WORKDIR ${HOME}\",\"empty_layer\":true},{\"created\":\"2026-03-25T05:07:17.850896957Z\",\"created_by\":\"/bin/sh -c #(nop) ENTRYPOINT [\\\"container-entrypoint\\\"]\",\"empty_layer\":true},{\"created\":\"2026-03-25T05:07:17.869347089Z\",\"created_by\":\"/bin/sh -c #(nop) CMD [\\\"base-usage\\\"]\",\"empty_layer\":true},{\"created\":\"2026-03-25T05:07:19.091882726Z\",\"created_by\":\"/bin/sh -c . /cachi2/cachi2.env \\u0026\\u0026     rpm-file-permissions \\u0026\\u0026   useradd -u 1001 -r -g 0 -d ${HOME} -c \\\"Default Application User\\\" default \\u0026\\u0026   chown -R 1001:0 ${APP_ROOT}\",\"empty_layer\":true},{\"created\":\"2026-03-25T05:07:19.186966982Z\",\"created_by\":\"/bin/sh -c #(nop) COPY file:93583a9ebbaeff1e36b48820b647eea1eef523f6627dacfb0b21af79f5a41b35 in /usr/share/buildinfo/content-sets.json      \",\"empty_layer\":true},{\"created\":\"2026-03-25T05:07:19.282920665Z\",\"created_by\":\"/bin/sh -c #(nop) COPY file:93583a9ebbaeff1e36b48820b647eea1eef523f6627dacfb0b21af79f5a41b35 in /root/buildinfo/content_manifests/content-sets.json      \",\"empty_layer\":true},{\"created\":\"2026-03-25T05:07:19.382450255Z\",\"created_by\":\"/bin/sh -c #(nop) COPY file:b055635374c6ef14cbb6effff93f7f1ebc5fa6c0089cf6065b40a0fea0bd31b2 in /usr/share/buildinfo/labels.json      \",\"empty_layer\":true},{\"created\":\"2026-03-25T05:07:19.480212955Z\",\"created_by\":\"/bin/sh -c #(nop) COPY file:b055635374c6ef14cbb6effff93f7f1ebc5fa6c0089cf6065b40a0fea0bd31b2 in /root/buildinfo/labels.json      \",\"empty_layer\":true},{\"created\":\"2026-03-25T05:07:20.359216346Z\",\"created_by\":\"/bin/sh -c #(nop) LABEL \\\"architecture\\\"=\\\"aarch64\\\" \\\"vcs-type\\\"=\\\"git\\\" \\\"vcs-ref\\\"=\\\"e83414bc33e8802ba139bf1a5b494c5931bac604\\\" \\\"org.opencontainers.image.revision\\\"=\\\"e83414bc33e8802ba139bf1a5b494c5931bac604\\\" \\\"build-date\\\"=\\\"2026-03-25T05:07:14Z\\\" \\\"org.opencontainers.image.created\\\"=\\\"2026-03-25T05:07:14Z\\\" \\\"release\\\"=\\\"1774415103\\\"org.opencontainers.image.revision=e83414bc33e8802ba139bf1a5b494c5931bac604,org.opencontainers.image.created=2026-03-25T05:07:14Z\"},{\"created\":\"2026-03-25T16:58:50.269751045Z\",\"created_by\":\"/bin/sh -c #(nop) ENV SUMMARY=\\\"Base image with essential libraries and tools used as a base for builder images like perl, python, ruby, etc.\\\"     DESCRIPTION=\\\"The s2i-base image, being built upon s2i-core, provides any images layered on top of it with all the tools needed to use source-to-image functionality. Additionally, s2i-base also contains various libraries needed for it to serve as a base for other builder images, like s2i-python or s2i-ruby.\\\"     NODEJS_VER=22\",\"comment\":\"FROM registry.access.redhat.com/ubi9/s2i-core:9.7-1774415103\",\"empty_layer\":true},{\"created\":\"2026-03-25T16:58:50.28976184Z\",\"created_by\":\"/bin/sh -c #(nop) LABEL summary=\\\"$SUMMARY\\\"       description=\\\"$DESCRIPTION\\\"       io.k8s.description=\\\"$DESCRIPTION\\\"       io.k8s.display-name=\\\"s2i base\\\"       io.openshift.tags=\\\"s2i-base rhel9\\\"       com.redhat.component=\\\"s2i-base-container\\\"       name=\\\"ubi9/s2i-base\\\"       version=\\\"1\\\"       com.redhat.license_terms=\\\"https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI\\\"\",\"empty_layer\":true},{\"created\":\"2026-03-25T16:59:09.666428136Z\",\"created_by\":\"/bin/sh -c . /cachi2/cachi2.env \\u0026\\u0026     yum -y module enable nodejs:$NODEJS_VER \\u0026\\u0026   INSTALL_PKGS=\\\"autoconf   automake   bzip2   gcc-c++   gd-devel   gdb   git   libcurl-devel   libpq-devel   libxml2-devel   libxslt-devel   lsof   make   mariadb-connector-c-devel   openssl-devel   patch   procps-ng   npm   redhat-rpm-config   sqlite-devel   unzip   wget   which   zlib-devel\\\" \\u0026\\u0026   yum install -y --setopt=tsflags=nodocs $INSTALL_PKGS \\u0026\\u0026   rpm -V $INSTALL_PKGS \\u0026\\u0026   node -v | grep -qe \\\"^v$NODEJS_VER\\\\.\\\" \\u0026\\u0026 echo \\\"Found VERSION $NODEJS_VER\\\" \\u0026\\u0026   yum -y clean all --enablerepo='*'\",\"empty_layer\":true},{\"created\":\"2026-03-25T16:59:09.763237812Z\",\"created_by\":\"/bin/sh -c #(nop) COPY file:93583a9ebbaeff1e36b48820b647eea1eef523f6627dacfb0b21af79f5a41b35 in /usr/share/buildinfo/content-sets.json      \",\"empty_layer\":true},{\"created\":\"2026-03-25T16:59:09.856799915Z\",\"created_by\":\"/bin/sh -c #(nop) COPY file:93583a9ebbaeff1e36b48820b647eea1eef523f6627dacfb0b21af79f5a41b35 in /root/buildinfo/content_manifests/content-sets.json      \",\"empty_layer\":true},{\"created\":\"2026-03-25T16:59:09.952133211Z\",\"created_by\":\"/bin/sh -c #(nop) COPY file:4ed1f6a8a4b487466a53957117022c701c8d7c3c8e94cd0db54a71696582cfbc in /usr/share/buildinfo/labels.json      \",\"empty_layer\":true},{\"created\":\"2026-03-25T16:59:10.047998023Z\",\"created_by\":\"/bin/sh -c #(nop) COPY file:4ed1f6a8a4b487466a53957117022c701c8d7c3c8e94cd0db54a71696582cfbc in /root/buildinfo/labels.json      \",\"empty_layer\":true},{\"created\":\"2026-03-25T16:59:13.184079434Z\",\"created_by\":\"/bin/sh -c #(nop) LABEL \\\"architecture\\\"=\\\"aarch64\\\" \\\"vcs-type\\\"=\\\"git\\\" \\\"vcs-ref\\\"=\\\"037c894c7923aaec51d55e831b272b6f0f99009b\\\" \\\"org.opencontainers.image.revision\\\"=\\\"037c894c7923aaec51d55e831b272b6f0f99009b\\\" \\\"build-date\\\"=\\\"2026-03-25T16:58:49Z\\\" \\\"org.opencontainers.image.created\\\"=\\\"2026-03-25T16:58:49Z\\\" \\\"release\\\"=\\\"1774457642\\\"org.opencontainers.image.revision=037c894c7923aaec51d55e831b272b6f0f99009b,org.opencontainers.image.created=2026-03-25T16:58:49Z\"},{\"created\":\"2026-03-26T04:44:03.542260794Z\",\"created_by\":\"/bin/sh -c #(nop) EXPOSE 8080\",\"comment\":\"FROM registry.access.redhat.com/ubi9/s2i-base:9.7-1774457642\",\"empty_layer\":true},{\"created\":\"2026-03-26T04:44:03.562843573Z\",\"created_by\":\"/bin/sh -c #(nop) ENV PYTHON_VERSION=3.11     PATH=$HOME/.local/bin/:$PATH     PYTHONUNBUFFERED=1     PYTHONIOENCODING=UTF-8     LC_ALL=en_US.UTF-8     LANG=en_US.UTF-8     CNB_STACK_ID=com.redhat.stacks.ubi9-python-311     CNB_USER_ID=1001     CNB_GROUP_ID=0     PIP_NO_CACHE_DIR=off\",\"empty_layer\":true},{\"created\":\"2026-03-26T04:44:03.582553365Z\",\"created_by\":\"/bin/sh -c #(nop) ENV SUMMARY=\\\"Platform for building and running Python $PYTHON_VERSION applications\\\"     DESCRIPTION=\\\"Python $PYTHON_VERSION available as container is a base platform for building and running various Python $PYTHON_VERSION applications and frameworks. Python is an easy to learn, powerful programming language. It has efficient high-level data structures and a simple but effective approach to object-oriented programming. Python's elegant syntax and dynamic typing, together with its interpreted nature, make it an ideal language for scripting and rapid application development in many areas on most platforms.\\\"\",\"empty_layer\":true},{\"created\":\"2026-03-26T04:44:03.603019337Z\",\"created_by\":\"/bin/sh -c #(nop) LABEL summary=\\\"$SUMMARY\\\"       description=\\\"$DESCRIPTION\\\"       io.k8s.description=\\\"$DESCRIPTION\\\"       io.k8s.display-name=\\\"Python 3.11\\\"       io.openshift.expose-services=\\\"8080:http\\\"       io.openshift.tags=\\\"builder,python,python311,python-311,rh-python311\\\"       com.redhat.component=\\\"python-311-container\\\"       name=\\\"ubi9/python-311\\\"       usage=\\\"s2i build https://github.com/sclorg/s2i-python-container.git --context-dir=3.11/test/setup-test-app/ ubi9/python-311 python-sample-app\\\"       com.redhat.license_terms=\\\"https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI\\\"       io.buildpacks.stack.id=\\\"com.redhat.stacks.ubi9-python-311\\\"       maintainer=\\\"SoftwareCollections.org \\u003csclorg@redhat.com\\u003e\\\"\",\"empty_layer\":true},{\"created\":\"2026-03-26T04:44:09.107694331Z\",\"created_by\":\"/bin/sh -c . /cachi2/cachi2.env \\u0026\\u0026     INSTALL_PKGS=\\\"python3.11 python3.11-devel python3.11-pip nss_wrapper-libs httpd         httpd-devel mod_ssl mod_auth_gssapi mod_ldap mod_session         atlas-devel gcc-gfortran libffi-devel libtool-ltdl enchant         krb5-devel\\\" \\u0026\\u0026     yum -y --setopt=tsflags=nodocs install $INSTALL_PKGS \\u0026\\u0026     rpm -V $INSTALL_PKGS \\u0026\\u0026     rpm -e --nodeps redhat-logos-httpd \\u0026\\u0026     yum -y clean all --enablerepo='*'\",\"empty_layer\":true},{\"created\":\"2026-03-26T04:44:09.20518686Z\",\"created_by\":\"/bin/sh -c #(nop) COPY dir:29d12dec77eb710cd6772c395baf21e4a818fa30e083996a1a5eb9d6b5081f3e in $STI_SCRIPTS_PATH      \",\"empty_layer\":true},{\"created\":\"2026-03-26T04:44:09.299700897Z\",\"created_by\":\"/bin/sh -c #(nop) COPY dir:851ff819c34c4510f6fe3bc235ac21a2eb3466a1a2f10ccd9fe44ff2c249850a in /      \",\"empty_layer\":true},{\"created\":\"2026-03-26T04:44:09.397420264Z\",\"created_by\":\"/bin/sh -c #(nop) COPY dir:208155bc9054883784c7146928dd201221f759e227e3fb517c26e7336c745994 in /opt/wheels      \",\"empty_layer\":true},{\"created\":\"2026-03-26T04:44:15.716726255Z\",\"created_by\":\"/bin/sh -c     . /cachi2/cachi2.env \\u0026\\u0026     python3.11 -m venv ${APP_ROOT} \\u0026\\u0026     ${APP_ROOT}/bin/pip install /opt/wheels/pip-* \\u0026\\u0026     rm -r /opt/wheels \\u0026\\u0026     chown -R 1001:0 ${APP_ROOT} \\u0026\\u0026     fix-permissions ${APP_ROOT} -P \\u0026\\u0026     rpm-file-permissions \\u0026\\u0026     echo \\\"unset BASH_ENV PROMPT_COMMAND ENV\\\" \\u003e\\u003e ${APP_ROOT}/bin/activate\",\"empty_layer\":true},{\"created\":\"2026-03-26T04:44:15.737205355Z\",\"created_by\":\"/bin/sh -c #(nop) ENV BASH_ENV=\\\"${APP_ROOT}/bin/activate\\\"     ENV=\\\"${APP_ROOT}/bin/activate\\\"     PROMPT_COMMAND=\\\". ${APP_ROOT}/bin/activate\\\"\",\"empty_layer\":true},{\"created\":\"2026-03-26T04:44:15.756923237Z\",\"created_by\":\"/bin/sh -c #(nop) USER 1001\",\"empty_layer\":true},{\"created\":\"2026-03-26T04:44:15.77679457Z\",\"created_by\":\"/bin/sh -c #(nop) CMD $STI_SCRIPTS_PATH/usage\",\"empty_layer\":true},{\"created\":\"2026-03-26T04:44:15.869297098Z\",\"created_by\":\"/bin/sh -c #(nop) COPY file:93583a9ebbaeff1e36b48820b647eea1eef523f6627dacfb0b21af79f5a41b35 in /usr/share/buildinfo/content-sets.json      \",\"empty_layer\":true},{\"created\":\"2026-03-26T04:44:15.962533013Z\",\"created_by\":\"/bin/sh -c #(nop) COPY file:93583a9ebbaeff1e36b48820b647eea1eef523f6627dacfb0b21af79f5a41b35 in /root/buildinfo/content_manifests/content-sets.json      \",\"empty_layer\":true},{\"created\":\"2026-03-26T04:44:16.055643759Z\",\"created_by\":\"/bin/sh -c #(nop) COPY file:2a4115667bda0f90c48515242e2d7b76ef38712d06a683e9673d7af5dc5f3905 in /usr/share/buildinfo/labels.json      \",\"empty_layer\":true},{\"created\":\"2026-03-26T04:44:16.149277752Z\",\"created_by\":\"/bin/sh -c #(nop) COPY file:2a4115667bda0f90c48515242e2d7b76ef38712d06a683e9673d7af5dc5f3905 in /root/buildinfo/labels.json      \",\"empty_layer\":true},{\"created\":\"2026-03-26T04:44:18.472064326Z\",\"created_by\":\"/bin/sh -c #(nop) LABEL \\\"architecture\\\"=\\\"aarch64\\\" \\\"vcs-type\\\"=\\\"git\\\" \\\"vcs-ref\\\"=\\\"21d23409bb4dd6d7d4a99128a5ca40e2de4dd978\\\" \\\"org.opencontainers.image.revision\\\"=\\\"21d23409bb4dd6d7d4a99128a5ca40e2de4dd978\\\" \\\"build-date\\\"=\\\"2026-03-26T04:44:03Z\\\" \\\"org.opencontainers.image.created\\\"=\\\"2026-03-26T04:44:03Z\\\" \\\"release\\\"=\\\"1774500093\\\"org.opencontainers.image.revision=21d23409bb4dd6d7d4a99128a5ca40e2de4dd978,org.opencontainers.image.created=2026-03-26T04:44:03Z\"},{\"created\":\"2026-03-30T07:24:28.860158981Z\",\"created_by\":\"/bin/sh -c #(nop) LABEL name=\\\"swgi-operator\\\"       vendor=\\\"Axis Systems\\\"       maintainer=\\\"support@example.com\\\"       version=\\\"0.1.0\\\"       release=\\\"1\\\"       summary=\\\"SWGI operator control plane\\\"       description=\\\"Kubernetes operator that manages SWGI operand deployment, scaling, lifecycle, and configuration.\\\"\",\"comment\":\"FROM registry.access.redhat.com/ubi9/python-311:latest\",\"empty_layer\":true},{\"created\":\"2026-03-30T07:24:28.954480072Z\",\"created_by\":\"/bin/sh -c #(nop) ENV PYTHONDONTWRITEBYTECODE=1     PYTHONUNBUFFERED=1\",\"empty_layer\":true},{\"created\":\"2026-03-30T07:24:28.995913906Z\",\"created_by\":\"/bin/sh -c #(nop) WORKDIR /opt/app-root/src\",\"empty_layer\":true},{\"created\":\"2026-03-30T07:24:29.221203945Z\",\"created_by\":\"/bin/sh -c #(nop) COPY file:ed5914089c4e555387787addd99156def60870e52dd09b6d1e3a1d1eefb28aed in requirements.txt      \"},{\"created\":\"2026-03-30T07:24:52.581484203Z\",\"created_by\":\"/bin/sh -c pip install --no-cache-dir -r requirements.txt\"},{\"created\":\"2026-03-30T07:24:53.423802369Z\",\"created_by\":\"/bin/sh -c #(nop) COPY dir:99b6ca82902c100c8bc71e02ee6f8d86b8aec57352a117f671e2aa91fa869079 in /opt/app-root/src/axis-swgi-operator      \"},{\"created\":\"2026-03-30T07:24:53.661536874Z\",\"created_by\":\"/bin/sh -c #(nop) COPY dir:51c1d026c8acebd0d0c41831f549b15d1ed4df0aed5ef10a8eeb79a590b292ca in /licenses      \"},{\"created\":\"2026-03-30T07:24:53.766045756Z\",\"created_by\":\"/bin/sh -c #(nop) USER 1001\",\"empty_layer\":true},{\"created\":\"2026-03-30T07:24:53.804852414Z\",\"created_by\":\"/bin/sh -c #(nop) ENTRYPOINT [\\\"kopf\\\", \\\"run\\\", \\\"/opt/app-root/src/axis-swgi-operator/controller/main.py\\\"]\",\"empty_layer\":true}]}",
     "repositories": [
         {
             "published": false,
-            "push_date": "2026-03-18T23:51:43Z",
+            "push_date": "2026-03-30T07:27:31Z",
             "registry": "quay.io",
-            "repository": "axis919/swgi-core",
+            "repository": "axis919/swgi-operator",
             "tags": [
                 {
-                    "added_date": "2026-03-18T23:51:43Z",
+                    "added_date": "2026-03-30T07:27:31Z",
                     "name": "0.1.0"
                 }
             ]
         }
     ],
-    "sum_layer_size_bytes": 381911040,
-    "uncompressed_top_layer_id": "sha256:c7410a127a918b80107d9a2217152d5a03ecd574be33abc513393bf0d912b520"
+    "sum_layer_size_bytes": 1183641088,
+    "uncompressed_top_layer_id": "sha256:e59b09321b7fac6e06c6c4bfa751d57749307690f96546cd9738bce396a8061f"
 }

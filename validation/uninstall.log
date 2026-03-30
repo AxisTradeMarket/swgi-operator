@@ -1,1 +1,3 @@
-# Populate with uninstall output showing no orphaned resources remain.
+# Local packaging evidence
+- No cluster uninstall flow was executed from this environment.
+- Orphaned-resource validation remains pending on a real OpenShift cluster.
