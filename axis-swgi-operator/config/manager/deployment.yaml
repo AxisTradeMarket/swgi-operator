@@ -24,6 +24,11 @@ spec:
         - name: axis-swgi-operator
           image: registry.connect.redhat.com/axissystems/axis-swgi-operator:0.1.0
           imagePullPolicy: IfNotPresent
+          env:
+            - name: RELATED_IMAGE_AXIS_SWGI_OPERATOR
+              value: quay.io/axis919/swgi-operator@sha256:bd06e708973ccded6a3a0f62406d8d5ac3c79c79451f7633e8cb33a5c089ed5c
+            - name: RELATED_IMAGE_AXIS_SWGI_API
+              value: quay.io/axis919/swgi-core@sha256:ad938716978c797a67698d4edd89a766b2a59626ad00999038bad4e76c53587b
           command:
             - kopf
           args:

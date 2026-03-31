@@ -10,12 +10,48 @@
         "image_id": "sha256:bd06e708973ccded6a3a0f62406d8d5ac3c79c79451f7633e8cb33a5c089ed5c",
         "labels": [
             {
-                "name": "io.openshift.expose-services",
-                "value": "8080:http"
+                "name": "build-date",
+                "value": "2026-03-26T04:44:03Z"
+            },
+            {
+                "name": "com.redhat.component",
+                "value": "python-311-container"
+            },
+            {
+                "name": "cpe",
+                "value": "cpe:/a:redhat:enterprise_linux:9::appstream"
+            },
+            {
+                "name": "io.buildah.version",
+                "value": "1.43.0"
             },
             {
                 "name": "io.openshift.s2i.scripts-url",
                 "value": "image:///usr/libexec/s2i"
+            },
+            {
+                "name": "release",
+                "value": "1"
+            },
+            {
+                "name": "summary",
+                "value": "SWGI operator control plane"
+            },
+            {
+                "name": "version",
+                "value": "0.1.0"
+            },
+            {
+                "name": "com.redhat.license_terms",
+                "value": "https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
+            },
+            {
+                "name": "description",
+                "value": "Kubernetes operator that manages SWGI operand deployment, scaling, lifecycle, and configuration."
+            },
+            {
+                "name": "io.buildpacks.stack.id",
+                "value": "com.redhat.stacks.ubi9-python-311"
             },
             {
                 "name": "io.openshift.tags",
@@ -26,64 +62,28 @@
                 "value": "image:///usr/libexec/s2i"
             },
             {
-                "name": "io.k8s.description",
-                "value": "Python 3.11 available as container is a base platform for building and running various Python 3.11 applications and frameworks. Python is an easy to learn, powerful programming language. It has efficient high-level data structures and a simple but effective approach to object-oriented programming. Python's elegant syntax and dynamic typing, together with its interpreted nature, make it an ideal language for scripting and rapid application development in many areas on most platforms."
-            },
-            {
-                "name": "io.k8s.display-name",
-                "value": "Python 3.11"
-            },
-            {
-                "name": "name",
-                "value": "swgi-operator"
-            },
-            {
                 "name": "org.opencontainers.image.created",
                 "value": "2026-03-26T04:44:03Z"
             },
             {
-                "name": "vcs-ref",
-                "value": "21d23409bb4dd6d7d4a99128a5ca40e2de4dd978"
-            },
-            {
-                "name": "vendor",
-                "value": "Axis Systems"
-            },
-            {
-                "name": "version",
-                "value": "0.1.0"
-            },
-            {
-                "name": "description",
-                "value": "Kubernetes operator that manages SWGI operand deployment, scaling, lifecycle, and configuration."
-            },
-            {
-                "name": "summary",
-                "value": "SWGI operator control plane"
+                "name": "url",
+                "value": "https://catalog.redhat.com/en/search?searchType=containers"
             },
             {
                 "name": "usage",
                 "value": "s2i build https://github.com/sclorg/s2i-python-container.git --context-dir=3.11/test/setup-test-app/ ubi9/python-311 python-sample-app"
             },
             {
-                "name": "vcs-type",
-                "value": "git"
-            },
-            {
-                "name": "architecture",
-                "value": "aarch64"
-            },
-            {
                 "name": "distribution-scope",
                 "value": "public"
             },
             {
-                "name": "io.buildah.version",
-                "value": "1.43.0"
+                "name": "io.k8s.display-name",
+                "value": "Python 3.11"
             },
             {
-                "name": "io.buildpacks.stack.id",
-                "value": "com.redhat.stacks.ubi9-python-311"
+                "name": "io.openshift.expose-services",
+                "value": "8080:http"
             },
             {
                 "name": "maintainer",
@@ -94,28 +94,28 @@
                 "value": "21d23409bb4dd6d7d4a99128a5ca40e2de4dd978"
             },
             {
-                "name": "release",
-                "value": "1"
+                "name": "vcs-ref",
+                "value": "21d23409bb4dd6d7d4a99128a5ca40e2de4dd978"
             },
             {
-                "name": "url",
-                "value": "https://catalog.redhat.com/en/search?searchType=containers"
+                "name": "vcs-type",
+                "value": "git"
             },
             {
-                "name": "build-date",
-                "value": "2026-03-26T04:44:03Z"
+                "name": "vendor",
+                "value": "Axis Systems"
             },
             {
-                "name": "com.redhat.component",
-                "value": "python-311-container"
+                "name": "architecture",
+                "value": "aarch64"
             },
             {
-                "name": "com.redhat.license_terms",
-                "value": "https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
+                "name": "io.k8s.description",
+                "value": "Python 3.11 available as container is a base platform for building and running various Python 3.11 applications and frameworks. Python is an easy to learn, powerful programming language. It has efficient high-level data structures and a simple but effective approach to object-oriented programming. Python's elegant syntax and dynamic typing, together with its interpreted nature, make it an ideal language for scripting and rapid application development in many areas on most platforms."
             },
             {
-                "name": "cpe",
-                "value": "cpe:/a:redhat:enterprise_linux:9::appstream"
+                "name": "name",
+                "value": "swgi-operator"
             }
         ],
         "layers": [
@@ -170,12 +170,12 @@
     "repositories": [
         {
             "published": false,
-            "push_date": "2026-03-30T07:46:36Z",
+            "push_date": "2026-03-30T21:51:43Z",
             "registry": "quay.io",
             "repository": "axis919/swgi-operator",
             "tags": [
                 {
-                    "added_date": "2026-03-30T07:46:36Z",
+                    "added_date": "2026-03-30T21:51:43Z",
                     "name": "0.1.0"
                 }
             ]

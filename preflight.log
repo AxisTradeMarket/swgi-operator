@@ -1,23 +1,16 @@
-time="2026-03-30T12:44:34+05:00" level=info msg="certification library version" version="1.16.0 <commit: b4a231cf9d50c5471eed598b3b48906eb5b9f3f7>"
-time="2026-03-30T12:44:37+05:00" level=info msg="running checks for quay.io/axis919/swgi-operator:0.1.0 for platform arm64"
-time="2026-03-30T12:44:39+05:00" level=info msg="target image" image="quay.io/axis919/swgi-operator:0.1.0"
-time="2026-03-30T12:46:36+05:00" level=info msg="check completed" check=HasLicense result=PASSED
-time="2026-03-30T12:46:36+05:00" level=info msg="check completed" check=HasUniqueTag result=PASSED
-time="2026-03-30T12:46:36+05:00" level=info msg="check completed" check=LayerCountAcceptable result=PASSED
-time="2026-03-30T12:46:36+05:00" level=info msg="check completed" check=HasNoProhibitedPackages result=PASSED
-time="2026-03-30T12:46:36+05:00" level=info msg="check completed" check=HasRequiredLabel result=PASSED
-time="2026-03-30T12:46:36+05:00" level=info msg="check completed" check=HasNoProhibitedLabels result=PASSED
-time="2026-03-30T12:46:36+05:00" level=info msg="USER 1001 specified that is non-root" check=RunAsNonRoot
-time="2026-03-30T12:46:36+05:00" level=info msg="check completed" check=RunAsNonRoot result=PASSED
-time="2026-03-30T12:47:08+05:00" level=info msg="check completed" check=HasModifiedFiles result=PASSED
-time="2026-03-30T12:47:10+05:00" level=info msg="check completed" check=BasedOnUbi result=PASSED
-time="2026-03-30T12:47:10+05:00" level=info msg="check completed" check=HasProhibitedContainerName result=PASSED
-time="2026-03-30T12:47:10+05:00" level=info msg="This image's tag 0.1.0 will be paired with digest sha256:bd06e708973ccded6a3a0f62406d8d5ac3c79c79451f7633e8cb33a5c089ed5c once this image has been published in accordance with Red Hat Certification policy. You may then add or remove any supplemental tags through your Red Hat Connect portal as you see fit."
-time="2026-03-30T12:47:14+05:00" level=info msg="preparing results that will be submitted to Red Hat"
-time="2026-03-30T12:47:27+05:00" level=info msg="Test results have been submitted to Red Hat."
-time="2026-03-30T12:47:27+05:00" level=info msg="These results will be reviewed by Red Hat for final certification."
-time="2026-03-30T12:47:27+05:00" level=info msg="The container's image id is: 69ca2a87df49406a5873f33d."
-time="2026-03-30T12:47:27+05:00" level=info msg="Please check https://connect.redhat.com/component/view/69ca29da0b2dfa07b4d30831/certification/test-results/69ca2a845053081782d8a9ec to view test results."
-time="2026-03-30T12:47:27+05:00" level=info msg="Please check https://connect.redhat.com/component/view/69ca29da0b2dfa07b4d30831/security/vulnerabilities/69ca2a87df49406a5873f33d to view security vulnerabilities."
-time="2026-03-30T12:47:27+05:00" level=info msg="Please check https://connect.redhat.com/component/view/69ca29da0b2dfa07b4d30831/images to monitor the progress."
-time="2026-03-30T12:47:27+05:00" level=info msg="Preflight result: PASSED"
+time="2026-03-31T02:48:28+05:00" level=info msg="certification library version" version="1.16.0 <commit: b4a231cf9d50c5471eed598b3b48906eb5b9f3f7>"
+time="2026-03-31T02:48:33+05:00" level=info msg="running checks for quay.io/axis919/swgi-operator:0.1.0 for platform arm64"
+time="2026-03-31T02:48:36+05:00" level=info msg="target image" image="quay.io/axis919/swgi-operator:0.1.0"
+time="2026-03-31T02:51:43+05:00" level=info msg="check completed" check=HasLicense result=PASSED
+time="2026-03-31T02:51:43+05:00" level=info msg="check completed" check=HasUniqueTag result=PASSED
+time="2026-03-31T02:51:43+05:00" level=info msg="check completed" check=LayerCountAcceptable result=PASSED
+time="2026-03-31T02:51:43+05:00" level=info msg="check completed" check=HasNoProhibitedPackages result=PASSED
+time="2026-03-31T02:51:43+05:00" level=info msg="check completed" check=HasRequiredLabel result=PASSED
+time="2026-03-31T02:51:43+05:00" level=info msg="check completed" check=HasNoProhibitedLabels result=PASSED
+time="2026-03-31T02:51:43+05:00" level=info msg="USER 1001 specified that is non-root" check=RunAsNonRoot
+time="2026-03-31T02:51:43+05:00" level=info msg="check completed" check=RunAsNonRoot result=PASSED
+time="2026-03-31T02:51:58+05:00" level=info msg="check completed" check=HasModifiedFiles result=PASSED
+time="2026-03-31T02:52:00+05:00" level=info msg="check completed" check=BasedOnUbi result=PASSED
+time="2026-03-31T02:52:00+05:00" level=info msg="check completed" check=HasProhibitedContainerName result=PASSED
+time="2026-03-31T02:52:00+05:00" level=info msg="This image's tag 0.1.0 will be paired with digest sha256:bd06e708973ccded6a3a0f62406d8d5ac3c79c79451f7633e8cb33a5c089ed5c once this image has been published in accordance with Red Hat Certification policy. You may then add or remove any supplemental tags through your Red Hat Connect portal as you see fit."
+time="2026-03-31T02:52:02+05:00" level=info msg="preparing results that will be submitted to Red Hat"
