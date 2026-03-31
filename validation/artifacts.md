@@ -5,13 +5,15 @@
 - Operand image: published from separate operand repository
 - Bundle image: `localhost/axis-swgi-operator-bundle:0.1.0`
 - Catalog image: `localhost/axis-swgi-operator-index:0.1.0`
-- Red Hat Connect operator path attempted: `registry.connect.redhat.com/axissystems/69a1ea5d9ff73edc46ba7323:latest`
+- Red Hat Connect operator image path: `registry.connect.redhat.com/axissystems/axis-swgi-operator:0.1.0`
+- Red Hat Connect bundle image path: `registry.connect.redhat.com/axissystems/axis-swgi-operator-bundle:0.1.0`
+- Red Hat Connect catalog image path: `registry.connect.redhat.com/axissystems/axis-swgi-operator-index:0.1.0`
 - Operator component ID: `69a1ea5d9ff73edc46ba7323`
 - Cluster version: not validated from this environment
 - Namespace: `swgi-system` planned
 - Commands run: see `commands-run.txt`
 - Notes:
-  - Red Hat Connect push failed with `name unknown: Image not found`, which indicates the backend repository path for the operator component is not provisioned yet.
+  - Red Hat Connect push failed with `name unknown: Image not found`, which indicates the backend repository path was not provisioned or accessible when the push was attempted.
   - Quay push completed for `quay.io/axis919/swgi-operator:0.1.0`.
   - Quay pull verification completed for `quay.io/axis919/swgi-operator:0.1.0`.
   - `preflight` passed for `quay.io/axis919/swgi-operator:0.1.0` on arm64.
