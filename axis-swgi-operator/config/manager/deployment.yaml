@@ -46,4 +46,3 @@ spec:
             capabilities:
               drop: ["ALL"]
             runAsNonRoot: true
-            runAsUser: 10001
