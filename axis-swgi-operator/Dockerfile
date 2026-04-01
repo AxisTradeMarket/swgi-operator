@@ -14,6 +14,10 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
 WORKDIR /opt/app-root/src
 
 COPY axis-swgi-operator/requirements.txt requirements.txt
+USER 0
+RUN dnf upgrade -y python3.11 python3.11-libs \
+    && dnf remove -y vim-minimal python3.11-devel libxslt-devel \
+    && dnf clean all
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY axis-swgi-operator /opt/app-root/src/axis-swgi-operator
